@@ -1,12 +1,10 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
+  - title: "Code"
+    url: https://rlagksqls17.github.io/Code
+  - title: "journal"
+    url: https://rlagksqls17.github.io/journal
+  - title: "Post"
+    url: https://rlagksqls17.github.io/Post
   # - title: "Sitemap"
   #   url: /sitemap/
