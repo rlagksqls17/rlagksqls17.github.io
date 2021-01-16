@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "street lamp"
-  avatar           : #"/assets/images/streetlamps.jpg"
+  avatar           : "/assets/streetlamps.jpg"
   bio              : "코딩하는 생명과학 전공자"
   location         : "Korea"
   email            :
