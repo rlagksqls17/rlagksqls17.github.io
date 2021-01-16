@@ -1,6 +1,7 @@
 ---
 title : "Post page"
 permalink : /Post/
+author_profile: true
 layout: single
 ---
 
