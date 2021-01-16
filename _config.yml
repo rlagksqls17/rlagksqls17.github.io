@@ -24,7 +24,7 @@ description              : "코딩하는 생명과학 전공자"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/image/streetlamp.jpg"
+teaser                   : "/assets/images/streetlamp.jpg"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "street lamp"
-  avatar           : "/assets/image/streetlamp.jpg"
+  avatar           : "/assets/images/streetlamp.jpg"
   bio              : "코딩하는 생명과학 전공자"
   location         : "Korea"
   email            :
