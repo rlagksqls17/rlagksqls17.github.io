@@ -6,5 +6,4 @@ comments: true
 layout: single
 last_modified_at: 2021-01-18T08:14:00~16:00
 ---
-test 사진입니다.
-![test 사진](https://rlagksqls17.github.io/assets/images/test.jpg)
+test 사진입니다.![test](/assets/test_yq824k61z.jpg)
