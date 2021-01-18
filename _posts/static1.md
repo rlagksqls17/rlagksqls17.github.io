@@ -8,6 +8,7 @@ tags:
   - Blog
 last_modified_at: 2021-01-18T08:17:00~18:00
 ---
+
 데이터 분석에서 변수는 범주형 변수(categorical variable)와 양적 변수(quantative variable)로 분류할 수 있다. 이들이 어떤 기준으로 분류되는지 다음 표를 보며 알아보자.  
 ![static_img1](/assets/static_img1.JPG)
 표에서 'Type' 컬럼을 먼저 보자. 여기서 'Type' 컬럼은 'Hot'값과 'Cold'값만을 가진다. 따라서 Hot drink와 Cold drink로 분류할 수 있을 것이다. 이렇게 하나의 속성을 가지는 변수를 범주형 변수라 한다. 범주형 변수는 글자 뿐만 아니라 숫자나 기호로도 나타낼 수 있다(ex: 'Hot' = 1, 'Cold' = 2).  
