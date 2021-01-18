@@ -1,9 +1,11 @@
 ---
 title: "범주형 자료 분석 (Categorical data analysis)"
-permalink: /Post/datastatistics/static1
-author_profile: true
-comments: true
-layout: single
+excerpt : "범주형 자료 분석 (Categorical data analysis)"
+
+categories:
+  - Blog
+tags:
+  - Blog
 last_modified_at: 2021-01-18T08:14:00~16:00
 ---
 데이터 분석에서 변수는 범주형 변수(categorical variable)와 양적 변수(quantative variable)로 분류할 수 있다. 이들이 어떤 기준으로 분류되는지 다음 표를 보며 알아보자.  
