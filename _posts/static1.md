@@ -1,6 +1,6 @@
 ---
-title: "범주형 자료 분석 (Categorical data analysis)"
-excerpt: "범주형 자료 분석 (Categorical data analysis)"
+title : "범주형 자료 분석 (Categorical data analysis)"
+excerpt : "범주형 자료 분석 (Categorical data analysis)"
 
 categories:
   - Blog
