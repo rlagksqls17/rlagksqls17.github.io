@@ -5,4 +5,4 @@ author_profile: true
 comments: true
 layout: single
 ---
-
+[범주형 자료 분석(Categorical data analysis)](https://rlagksqls17.github.io/Post/datastatistics/static1)
