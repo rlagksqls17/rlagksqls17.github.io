@@ -6,3 +6,5 @@ comments: true
 layout: single
 ---
 [범주형 자료와 양적자료](https://rlagksqls17.github.io/blog/static1)
+
+[양적 자료 분석](https://rlagksqls17.github.io/blog/static2)
