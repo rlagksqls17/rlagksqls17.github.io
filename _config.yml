@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Bio-coder"
 title_separator          : " "
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Street lamp"
+name                     : "Street lamp."
 description              : "코딩하는 생명과학 전공자"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
