@@ -1,6 +1,6 @@
 ---
 title: "Code"
-permalink: /Code/
+permalink: /Code
 author_profile : true
 layout: single
 ---
