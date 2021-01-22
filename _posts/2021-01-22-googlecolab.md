@@ -1,6 +1,6 @@
 ---
-title : "꼭 읽어주세요."
-excerpt : "꼭 읽어주세요."
+title : "코드를 공유하게 된 이유"
+excerpt : "코드를 공유하게 된 이유"
 categories:
   - Blog
 tags:

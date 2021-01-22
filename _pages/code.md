@@ -8,6 +8,6 @@ layout: single
 
 
   
-[꼭 읽어주세요.](https://rlagksqls17.github.io/blog/googlecolab)  
+[코드를 공유하게 된 이유](https://rlagksqls17.github.io/blog/googlecolab)  
   
 
