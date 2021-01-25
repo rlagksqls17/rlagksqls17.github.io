@@ -13,5 +13,9 @@ layout: single
 [자료 분포 모델링](https://rlagksqls17.github.io/blog/modeling)  
   
 
+[회귀 직선 그리기](https://rlagksqls17.github.io/blog/static3)  
+  
+
+
 
 
