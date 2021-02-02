@@ -15,6 +15,9 @@ layout: single
 
 [회귀 직선 그리기](https://rlagksqls17.github.io/blog/static3)  
   
+  
+[생물학실험의 설계와 가설의 검정](https://rlagksqls17.github.io/blog/static4)  
+  
 
 
 
