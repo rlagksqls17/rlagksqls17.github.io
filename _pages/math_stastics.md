@@ -8,17 +8,12 @@ layout: single
 [범주형 자료와 양적자료](https://rlagksqls17.github.io/blog/static1)
 
 [양적 자료 분석](https://rlagksqls17.github.io/blog/static2)
-  
+
 
 [자료 분포 모델링](https://rlagksqls17.github.io/blog/modeling)  
-  
+
 
 [회귀 직선 그리기](https://rlagksqls17.github.io/blog/static3)  
-  
-  
+
+
 [생물학실험의 설계와 가설의 검정](https://rlagksqls17.github.io/blog/static4)  
-  
-
-
-
-
