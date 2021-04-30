@@ -99,9 +99,9 @@ author:
   location         : "Korea"
   email            :
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "https://rlagksqls17.github.io/rlagksqls17@naver.com"
+    - label: # "Email"
+      icon: # "fas fa-fw fa-envelope-square"
+      url: # "https://rlagksqls17.github.io/rlagksqls17@naver.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
