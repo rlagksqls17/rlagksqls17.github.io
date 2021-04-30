@@ -5,6 +5,5 @@ author_profile: true
 comments: true  
 layout: single    
 ---  
-#링크
 
-[1장]()
+[1장](https://rlagksqls17.github.io/blog/MachLearn1)
