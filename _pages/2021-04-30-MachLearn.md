@@ -6,4 +6,4 @@ comments: true
 layout: single    
 ---  
 
-[1장](https://rlagksqls17.github.io/blog/MachLearn1)
+[기계학습 정리 - 1장 (소개)](https://rlagksqls17.github.io/blog/MachLearn1)
