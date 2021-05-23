@@ -14,7 +14,7 @@ last_modified_at: 2021-05-23T08:19:00~21:00
 목차는 아래 내용과 같다.  
 [학습 링크](https://colab.research.google.com/drive/1ZZ9ObK68h2XGQj7UwDez6aFCGh5Sh1lR?usp=sharing)  
 
-* 데이터 결합  
+데이터 결합  
 
 > 행 결합  
 >> rbind()와 pd.concat()  
@@ -25,7 +25,7 @@ last_modified_at: 2021-05-23T08:19:00~21:00
 > 병합  
 >> merge()와 pd.merge()  
 
-* 데이터 요약  
+데이터 요약  
 
 > aggregation  
 >> aggregate()와 DataFrame.groupby().함수   
