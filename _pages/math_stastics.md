@@ -21,6 +21,6 @@ layout: single
 
 [주성분분석](https://colab.research.google.com/drive/1HmqeoO18823hywNX-as78Domi1PL614X#scrollTo=qOhAkC2DvO6L)  
 
-[요인분석](https://colab.research.google.com/drive/1ecDPHUIakjL3NHdfH18QxqM1i54o4mOU?usp=sharing)  
+[요인분석](https://colab.research.google.com/drive/1ecDPHUIakjL3NHdfH18QxqM1i54o4mOU?usp=sharing)    
+
 [데이터 결합 및 요약](https://colab.research.google.com/drive/1ZZ9ObK68h2XGQj7UwDez6aFCGh5Sh1lR?usp=sharing)  
-  
