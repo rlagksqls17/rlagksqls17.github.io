@@ -11,10 +11,10 @@ toc_sticky: False
 toc_label: "페이지 주요 목차"  
 last_modified_at: 2021-07-11T08:17:00~21:00  
 ---
-  
- 
+
+
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Frlagksqls17.github.io%2Fblog%2Fmake-my-blog%2F&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)  
-  
+
 
 # github 블로그 만들기 - 1 (소개)   
 
@@ -72,7 +72,7 @@ last_modified_at: 2021-07-11T08:17:00~21:00
 
 ### **정리하며**  
 
-위 글을 보면 알 수 있듯이 깃허브에 비하면 **티스토리는 사용성이 너무 뛰어나다. 그렇다고 네이버 블로그처럼 폐쇄적인 것도 아니고, 디자인도 좀 더 모던하다고 해야할까, 깔끔하다. 또한 블로그 운영하는 입장에서 필요한 부분들은 입맛에 맞게 디자인을 변경할 수 있도록 해놨다. 따라서 좀 더 블로그 작성하는 시간을 효율적으로 사용하고 싶다면 티스토리를 추천한다.** [html 코드를 잘 변경했다고 생각하는 티스토리블로그](https://moadi.tistory.com/314)  
+위 글을 보면 알 수 있듯이 깃허브에 비하면 **티스토리는 사용성이 너무 뛰어나다. 그렇다고 네이버 블로그처럼 폐쇄적인 것도 아니고, 디자인도 좀 더 모던하다고 해야할까, 깔끔하다. 또한 블로그 운영하는 입장에서 필요한 부분들은 입맛에 맞게 디자인을 변경할 수 있도록 해놨다. 따라서 좀 더 블로그 작성하는 시간을 효율적으로 사용하고 싶다면 티스토리를 추천한다.** [같은 블로그 다른 느낌](https://mybloglife.tistory.com/2)   
 
 
 
