@@ -30,20 +30,24 @@ last_modified_at: 2021-07-14T08:20:00~22:00
 ```$ 알고자하는 명령어 --help : ```사용하고자 하는 명령어 뒤에 붙여서 사용  
 ```$ chmod 777 파일명.txt``` : 파일의 권한 변경 (777은 모든 권한)   
 ```$ chown [소유할 사용자]:[소유할 그룹][변경 희망하는 디렉토리나 파일명]``` : 소유권 변경   
-ex) chown user:use_group file.txt     
+ex) chown user:use_group file.txt  
+  
 ```$ mkdir [생성할 디렉토리 이름]``` : 디렉토리 생성  
-ex) $ mkdir forder   
+ex) $ mkdir forder  
+
 ```$ touch``` : 빈 파일 생성  
 ex) $ touch file.txt  
+
 ```$ rmdir``` : 디렉토리 삭제  
 ex) $ rmdir forder  
+
 ```$ rm [option][삭제할 파일 및 디렉토리 명]``` : 파일 및 디렉토리 삭제  
 ex) 
 $ rm \-r forder : 디렉토리와 그 하부 파일까지 삭제  
-
 $ rm \-f forder : 삭제 여부 묻지 않고 바로 삭제 (**주의**)  
 $ rm \-i forder: 삭제할 것인지 확인  
-$rm \-rf forder: 삭제 여부 묻지 않고 하부 파일이 있는 디렉토리까지 삭제    
+$rm \-rf forder: 삭제 여부 묻지 않고 하부 파일이 있는 디렉토리까지 삭제   
+
 ```$ cp [oprtion] [대상 위치 및 이름][복사하고 싶은 위치]``` : 파일 및 디렉토리 복사  
 ex)  
 $ cp directory\/forder\/file1.txt directory\/forder2\/file2.txt :   
@@ -55,6 +59,7 @@ $ cp \-p .... :
 ```$ mv ./forder2/file1.py ./folder1``` : 폴더 1에 파일 1을 이동함  
 ```$ cat [option] [파일이름]``` : 파일내용 출력  
 ex) cat -n file1.txt: 왼쪽에 줄 번호와 함께 file1.txt 내용을 출력  
+
 ```$ find ./forder1/file1.py -type d:``` 디렉토리 내 파일 검색  
 ```$ find ./forder1/file1.py -type f:``` 폴더 내 파일 검색  
 ```$ grep [option][pattern][파일 명]``` : 파일 내에서 지정한 패턴이나 문자열을 찾은 후에 그 패턴을 포함하고 있는 모든 행을 출력  
@@ -159,7 +164,7 @@ df
 
 : Secure Shell의 줄임말로 네트워크를 통해 다른 컴퓨터에 접근하거나 그 컴퓨터에서 명령 실행 가능하게 해주는 프로토콜 : SSH 통해 다른 컴퓨터에 리눅스에 접속하여 명령어 및 프로그램을 실행 가능  
   
-기존에는 TELNET도 있었지만 보안저그올 매우 치명적인 결함이 존재했음  
+기존에는 TELNET도 있었지만 보안적으로 매우 치명적인 결함이 존재했음  
 
 - 패킷 데이터를 암호화하지 않고 평문으로 그대로 보냈기 때문임  
 - SSH는 데이터를 암호화하였음  
@@ -179,7 +184,7 @@ sudo netstat -antp
 
 # 마치며  
 
-근 한달 동안 블로그에는 다음의 내용들이 들어갈 것 같다.  
+이후 한달 동안 블로그에는 다음의 내용들이 들어갈 것 같다.  
 
 1. 엘리스 교육과정 복습  
 2. Github 블로그 만들기  
