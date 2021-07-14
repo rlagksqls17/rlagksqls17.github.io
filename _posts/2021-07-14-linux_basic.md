@@ -1,12 +1,10 @@
 ---
 title: "복습 - 리눅스 기본 명령어"
 excerpt: "last_modified_at: 2021-07-14"
-categories:
-  - Blog
-tags:
-  - Blog
-use_math: True
-katex: True
+categories:  
+  - Blog  
+tags:  
+  - Blog  
 toc: True
 toc_sticky: False
 toc_label: "페이지 주요 목차"
@@ -41,17 +39,18 @@ ex) $ touch file.txt
 ex) $ rmdir forder  
 ```$ rm [option][삭제할 파일 및 디렉토리 명]``` : 파일 및 디렉토리 삭제  
 ex) 
-$ rm -r forder : 디렉토리와 그 하부 파일까지 삭제  
-$ rm -f forder : 삭제 여부 묻지 않고 바로 삭제 **주의**  
-$ rm -i forder: 삭제할 것인지 확인  
-$rm -rf forder: 삭제 여부 묻지 않고 하부 파일이 있는 디렉토리까지 삭제    
+$ rm \-r forder : 디렉토리와 그 하부 파일까지 삭제  
+
+$ rm \-f forder : 삭제 여부 묻지 않고 바로 삭제 (**주의**)  
+$ rm \-i forder: 삭제할 것인지 확인  
+$rm \-rf forder: 삭제 여부 묻지 않고 하부 파일이 있는 디렉토리까지 삭제    
 ```$ cp [oprtion] [대상 위치 및 이름][복사하고 싶은 위치]``` : 파일 및 디렉토리 복사  
 ex)  
-$ cp directory/forder/file1.txt directory/forder2/file2.txt :   
+$ cp directory\/forder\/file1.txt directory\/forder2\/file2.txt :   
 파일 1의 내용이 파일 2의 내용으로 복사됨     
-$ cp -r  ./directory/forder1 ./directory/forder2:   
+$ cp \-r  ./directory/forder1 ./directory/forder2:   
 폴더1와 폴더1 내 모든 파일이 폴더2로 전체복사  **(폴더1이 폴더2 안으로 들어감)**  
-$ cp -p .... :    
+$ cp \-p .... :    
 소유주, 그룹, 권한, 시간 정보를 그대로 복사 
 ```$ mv ./forder2/file1.py ./folder1``` : 폴더 1에 파일 1을 이동함  
 ```$ cat [option] [파일이름]``` : 파일내용 출력  
@@ -159,11 +158,13 @@ df
 ## SSH
 
 : Secure Shell의 줄임말로 네트워크를 통해 다른 컴퓨터에 접근하거나 그 컴퓨터에서 명령 실행 가능하게 해주는 프로토콜 : SSH 통해 다른 컴퓨터에 리눅스에 접속하여 명령어 및 프로그램을 실행 가능  
-: 기존에는 TELNET도 있었지만 보안저그올 매우 치명적인 결함이 존재했음  
+  
+기존에는 TELNET도 있었지만 보안저그올 매우 치명적인 결함이 존재했음  
 
 - 패킷 데이터를 암호화하지 않고 평문으로 그대로 보냈기 때문임  
 - SSH는 데이터를 암호화하였음  
-  : 우분투에서는 openssh 라는 패키지를 통해 SSH를 구동 가능  
+
+우분투에서는 openssh 라는 패키지를 통해 SSH를 구동 가능  
 
 ```
 dpkg -l | grep opensh  # opensh 설치 여부 확인 가능    
