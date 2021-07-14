@@ -1,22 +1,21 @@
 ---
-
 title: "복습 - 리눅스 기본 명령어"
 excerpt: "last_modified_at: 2021-07-14"
 categories:
-
   - Blog
-    tags:
+tags:
   - Blog
-    use_math: True
-    katex: True
-    toc: True
-    toc_sticky: False
-    toc_label: "페이지 주요 목차"
-    last_modified_at: 2021-07-14T08:20:00~22:00   
-
+use_math: True
+katex: True
+toc: True
+toc_sticky: False
+toc_label: "페이지 주요 목차"
+last_modified_at: 2021-07-14T08:20:00~22:00   
 ---
-
   
+
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Frlagksqls17.github.io%2F2021-07-14-linux_basic%2F&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)  
+
 
 # 리눅스 기본 명령어  
 
@@ -33,40 +32,41 @@ categories:
 ```$ 알고자하는 명령어 --help : ```사용하고자 하는 명령어 뒤에 붙여서 사용  
 ```$ chmod 777 파일명.txt``` : 파일의 권한 변경 (777은 모든 권한)   
 ```$ chown [소유할 사용자]:[소유할 그룹][변경 희망하는 디렉토리나 파일명]``` : 소유권 변경   
->  ex) chown user:use_group file.txt    
+ex) chown user:use_group file.txt     
 ```$ mkdir [생성할 디렉토리 이름]``` : 디렉토리 생성  
-> ex) $ mkdir forder   
+ex) $ mkdir forder   
 ```$ touch``` : 빈 파일 생성  
->  ex) $ touch file.txt  
+ex) $ touch file.txt  
 ```$ rmdir``` : 디렉토리 삭제  
->  ex) $ rmdir forder  
+ex) $ rmdir forder  
 ```$ rm [option][삭제할 파일 및 디렉토리 명]``` : 파일 및 디렉토리 삭제  
-> ex) 
-> $ rm -r forder : 디렉토리와 그 하부 파일까지 삭제  
-> $ rm -f forder : 삭제 여부 묻지 않고 바로 삭제 **주의**  
-> $ rm -i forder: 삭제할 것인지 확인  
-> $rm -rf forder: 삭제 여부 묻지 않고 하부 파일이 있는 디렉토리까지 삭제    
+ex) 
+$ rm -r forder : 디렉토리와 그 하부 파일까지 삭제  
+$ rm -f forder : 삭제 여부 묻지 않고 바로 삭제 **주의**  
+$ rm -i forder: 삭제할 것인지 확인  
+$rm -rf forder: 삭제 여부 묻지 않고 하부 파일이 있는 디렉토리까지 삭제    
 ```$ cp [oprtion] [대상 위치 및 이름][복사하고 싶은 위치]``` : 파일 및 디렉토리 복사  
-> ex)  
-> $ cp directory/forder/file1.txt directory/forder2/file2.txt :   
-> 파일 1의 내용이 파일 2의 내용으로 복사됨     
-> $ cp -r  ./directory/forder1 ./directory/forder2:   
-> 폴더1와 폴더1 내 모든 파일이 폴더2로 전체복사  **(폴더1이 폴더2 안으로 들어감)**  
-> $ cp -p .... :    
-> 소유주, 그룹, 권한, 시간 정보를 그대로 복사 
+ex)  
+$ cp directory/forder/file1.txt directory/forder2/file2.txt :   
+파일 1의 내용이 파일 2의 내용으로 복사됨     
+$ cp -r  ./directory/forder1 ./directory/forder2:   
+폴더1와 폴더1 내 모든 파일이 폴더2로 전체복사  **(폴더1이 폴더2 안으로 들어감)**  
+$ cp -p .... :    
+소유주, 그룹, 권한, 시간 정보를 그대로 복사 
 ```$ mv ./forder2/file1.py ./folder1``` : 폴더 1에 파일 1을 이동함  
 ```$ cat [option] [파일이름]``` : 파일내용 출력  
-> ex) cat -n file1.txt: 왼쪽에 줄 번호와 함께 file1.txt 내용을 출력  
+ex) cat -n file1.txt: 왼쪽에 줄 번호와 함께 file1.txt 내용을 출력  
 ```$ find ./forder1/file1.py -type d:``` 디렉토리 내 파일 검색  
 ```$ find ./forder1/file1.py -type f:``` 폴더 내 파일 검색  
 ```$ grep [option][pattern][파일 명]``` : 파일 내에서 지정한 패턴이나 문자열을 찾은 후에 그 패턴을 포함하고 있는 모든 행을 출력  
-> ```
-> <option>  
-> -i : 대소문자 구분하지 않고 검색  
-> -v : 패턴과 일치하지 않는 행을 출력    
-> -c : 패턴과 일치하는 행의 개수를 출력    
-> -w : 패턴과 단어 단위로 매칭되어야 출력  
-> ```
+
+```
+<option>  
+-i : 대소문자 구분하지 않고 검색  
+-v : 패턴과 일치하지 않는 행을 출력    
+-c : 패턴과 일치하는 행의 개수를 출력    
+-w : 패턴과 단어 단위로 매칭되어야 출력  
+```
 
 ```$ ps [option]:``` 프로세스 목록 보기  
 
@@ -102,16 +102,16 @@ option
 -d : 예약된 작업을 삭제, atrm 명령어 또한 같은 동작을 수행  
 ```  
 
----
+---  
 
- ### file redirection  
+### file redirection  
 
 일반적인 표준 입력, 출력을 사용하지 않고 파일의 내용 자체를 입력스트림으로 사용  
 
 ```
-ls > ls.txt #ls,txt에 ls의 출력내용이 저장됨`
-`ls >> ls.txt #ls.txt가 이미 존재할 때 뒤의 내용에 추가하여 작성함`
-`0> : 표준 입력, 1> : 표준 출력, 2> : 표준 에러  
+ls > ls.txt #ls,txt에 ls의 출력내용이 저장됨
+ls >> ls.txt #ls.txt가 이미 존재할 때 뒤의 내용에 추가하여 작성함
+0> : 표준 입력, 1> : 표준 출력, 2> : 표준 에러  
 ```
 
 ```
