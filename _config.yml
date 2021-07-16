@@ -93,9 +93,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "street lamp"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "코딩하는 생명과학 전공자"
+  name             : "garden"
+  avatar           : "https://imgur.com/ZZS60Nt" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "INFJ의 코딩일기"
   location         : "Korea"
   email            :
   links:
