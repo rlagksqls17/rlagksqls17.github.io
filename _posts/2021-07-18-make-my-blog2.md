@@ -12,6 +12,14 @@ toc_label: "페이지 주요 목차"
 last_modified_at: 2021-07-17T08:20:00~23:00  
 ---
 
+
+
+  
+
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Frlagksqls17.github.io%2Fblog%2Fmake-my-blog2%2F&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)  
+
+
+
 지난주 포스팅에 이어 이제 github 블로그를 직접 개설하기 위한 설명을 하도록 하겠다.  
 최대한 따라가기 쉽도록 상세하게 작성할테니 꼭 성공하길 바란다.  
 
