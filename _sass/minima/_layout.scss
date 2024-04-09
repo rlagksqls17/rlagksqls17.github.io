@@ -339,3 +339,13 @@
     width: calc(50% - (#{$spacing-unit} / 2));
   }
 }
+
+
+/**
+ * Homa page
+ */
+.hero {
+  .feature-img {
+    max-width: 60%;
+  }
+}

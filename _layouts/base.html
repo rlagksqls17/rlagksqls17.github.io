@@ -6,13 +6,14 @@
   <body>
 
     {%- include header.html -%}
-
-    <main class="page-content" aria-label="Content">
+    <main class="page-content" aria-label="Content" style="display: flex;"> <!-- 사진과 텍스트 나란히 위치 -->
+      <div class = "hero">
+        <img class = "feature-img" src="{{ 'assets/homepict.png' | relative_url }}" />
+      </div>
       <div class="wrapper">
         {{ content }}
       </div>
     </main>
-
     {%- include footer.html -%}
 
   </body>
