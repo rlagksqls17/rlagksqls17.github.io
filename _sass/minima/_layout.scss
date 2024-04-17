@@ -36,7 +36,6 @@
   border: 1px solid $border-color-01;
   border-radius: 5px;
   text-align: right;
-  margin-left: 400px;
 
   .nav-trigger {
     display: none;
@@ -125,7 +124,6 @@
 .site-footer {
   border-top: 1px solid $border-color-01;
   padding: $spacing-unit 0;
-  margin-left: 400px;
 }
 
 .footer-heading {
@@ -162,6 +160,7 @@
   width: calc(100% - (#{$spacing-unit} / 2));
 }
 
+
 @media screen and (min-width: $on-large) {
   .footer-col-1 {
     width: calc(35% - (#{$spacing-unit} / 2));
@@ -178,7 +177,7 @@
 
 @media screen and (min-width: $on-medium) {
   .footer-col-wrapper {
-    display: flex
+    display: flex;
   }
 
   .footer-col {
@@ -196,6 +195,8 @@
     }
   }
 }
+
+
 
 
 
