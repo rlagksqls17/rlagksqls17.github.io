@@ -1,0 +1,11 @@
+main:
+  - title: "Home"
+  - url: https://rlagksqls17.github.io/
+  - title: "Project"
+  - url: /project/
+  - title: "Fixbug"
+  - url: /fixbug/
+  - title: "Note"
+  - url: /note/
+  - title: "profile"
+  - url: /profile/
