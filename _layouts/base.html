@@ -2,16 +2,17 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   {%- include head.html -%}
   <body>
-    {%- include header.html -%}
-    <main class="page-content" aria-label="Content" display="flex"> <!-- 사진과 텍스트 나란히 위치 -->
-      <div class = "hero">
-        <img class = "feature-img" src="{{ 'assets/homepict.png' | relative_url }}" />
-      </div>
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
-    {%- include footer.html -%}
-
+    <div class = "hero">
+      <img class = "feature-img" src="{{ 'assets/homepict.png' | relative_url }}" />
+    </div>
+    <div class="container">
+      {%- include header.html -%}
+      <main class="page-content" aria-label="Content">
+        <div class="wrapper">
+          {{ content }}
+        </div>
+      </main>
+      {%- include footer.html -%}
+    </div>
   </body>
 </html>

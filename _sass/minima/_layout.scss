@@ -350,20 +350,26 @@
 
 
 /**
- * Homa page
- */
- .hero {
+* Home page
+**/
+.hero{
   position: fixed;
-  top: 0;
   left: 0;
-  width: 420px;
+  top: 0;
+  width: 350px;
   height: 100%;
   z-index: 1;
+  overflow-x: hidden;
+  background-color: red;
 }
 
 
-@media (max-width: 768px) { /* 화면 너비가 768px 이하인 경우에만 적용 */
-  .hero {
-    display: none; /* 그림 숨김 */
+.hero img{
+  height: 100%;
+}
+
+@media (max-width: 768px){
+  .hero{
+    display: none;
   }
 }
