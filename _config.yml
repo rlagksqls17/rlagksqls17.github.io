@@ -24,7 +24,6 @@ plugins:
 # Theme-specific settings
 
 header_pages:
-  - project.md
   - about.md
 
 # Set to `true` to show excerpts on the homepage.
