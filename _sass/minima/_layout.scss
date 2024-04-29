@@ -6,7 +6,6 @@
   border-bottom: 1.8px solid #3C629F;
   min-height: $spacing-unit * 1.865;
   line-height: $base-line-height * $base-font-size * 2.25;
-
   // Positioning context for the mobile navigation icon
   position: sticky;
   top: -12px;
@@ -42,7 +41,9 @@
   background-color: $background-color;
   border: 1px solid $border-color-01;
   border-radius: 5px;
-  text-align: right;
+  margin-left: 28%;
+  margin-right: 10%;
+
 
   .nav-trigger {
     display: none;
@@ -80,16 +81,23 @@
     padding-bottom: 5px;
   }
 
+  .page-trigger {
+    display: inline-flex;
+    width: 65%; // nav bar 폭 조정
+    flex: auto;
+    align-items: baseline;
+    justify-content: space-evenly;
+  }
 
   .page-link {
     color: $text-color;
     line-height: $base-line-height;
-    display: block;
+    display: inline;
     padding: 5px 10px;
     font-family: $base-font-family;
     font-weight: bold;
     font-size: 24px;
- 
+    
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
       margin-right: 0;
@@ -99,7 +107,7 @@
 
   @media screen and (min-width: $on-medium) {
     position: static;
-    float: right;
+    text-align:flex; // 변경 부분, 메뉴 텍스트 flex
     border: none;
     background-color: inherit;
 
@@ -118,11 +126,15 @@
     .page-link {
       display: inline;
       padding: 0;
-
-      &:not(:last-child) {
-        margin-right: 20px;
+      &:is(:first-child){ // 수정된 부분
+        margin-left: 15%;
       }
-      margin-left: auto;
+      &:is(:last-child){ // 수정된 부분
+        margin-right: 5%;
+      }
+      
+      margin-left:20%;
+      margin-right:20%;
     }
   }
 }
