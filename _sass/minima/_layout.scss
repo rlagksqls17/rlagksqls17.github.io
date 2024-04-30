@@ -76,7 +76,6 @@
   input[id="nav-trigger"] + label{ // 폰 메뉴 업데이트
     display: block;
     width: 60px;
-    height: 40px;
     cursor: pointer;
     position: relative;
     z-index: 2;
@@ -85,7 +84,7 @@
   input[id="nav-trigger"] + label + #phone-trigger{ // 폰 메뉴 업데이트
     position:fixed;
     float: right;
-    width:100px;
+    width:120px;
     height:350px;
     background:white;
     padding:60px 25px 25px 25px;
