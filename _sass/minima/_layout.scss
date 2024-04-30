@@ -41,8 +41,8 @@
   background-color: $background-color;
   border: 1px solid $border-color-01;
   border-radius: 5px;
-  margin-left: 25%; // 수정 : 고정값 주어 일관성 있는 마진 줌
-  margin-right: 10px; // 수정 : 고정값 주어 일관성 있는 마진 줌
+  margin-left: 20%; // nav bar 업데이트 : 고정값 주어 navigation 바 일관성 있는 마진 줌
+  margin-right: 10px; // nav bar 업데이트 : 고정값 주어 navigation 바 일관성 있는 마진 줌
 
 
   .nav-trigger {
@@ -110,35 +110,41 @@
 
   .page-trigger {
     display: inline-flex;
-    width: 100%; // nav bar 폭 조정
+    width: 100%; // nav bar 업데이트: nav bar 폭 조정
     flex: auto;
     align-items: baseline;
     justify-content: space-evenly;
   }
 
   .page-link {
+    cursor: pointer;
     color: $text-color;
     line-height: $base-line-height;
     display: inline;
+    text-decoration: none; // nav bar 업데이트: 마우스 갖다댈시 밑줄 생성 제거
     padding: 5px 10px;
     font-family: $base-font-family;
     font-weight: bold;
     font-size: 24px;
-    &:is(:first-child){ // 수정된 부분
+    &:is(:first-child){ // nav bar 업데이트: (nav 바 요소 별 위치 설정)
       margin-left: 12%;
     }
-    &:is(:last-child){ // 수정된 부분
+    &:is(:last-child){ // nav bar 업데이트: (nav 바 요소 별 위치 설정)
       margin-right: 8%;
     }
+    background-color: black;
     
-    margin-left:auto; // 수정 : auto 값 주어 화면을 축소해도 알아서 요소간 간격이 조정되게 함
+    margin-left:auto; // nav bar 업데이트: auto 값 주어 화면을 축소해도 알아서 요소간 간격이 조정되게 함
     margin-right:auto; // 위와 동일
   }
-  
+
+  ul li {
+    display: inline-flex;
+  }
 
   @media screen and (min-width: $on-medium) {
     position: static;
-    text-align:flex; // 변경 부분, 메뉴 텍스트 flex
+    text-align:flex; // nav bar 업데이트: 변경 부분, 메뉴 텍스트 flex
     border: none;
     background-color: inherit;
 
@@ -157,24 +163,24 @@
     .page-link {
       display: inline;
       padding: 0;
-      &:is(:first-child){ // 수정된 부분
+      &:is(:first-child){ // nav bar 업데이트: (nav 바 요소 별 위치 설정)
         margin-left: 8%;
       }
-      &:is(:last-child){ // 수정된 부분
+      &:is(:last-child){ // nav bar 업데이트: (nav 바 요소 별 위치 설정)
         margin-right: 8%;
       }
       
-      margin-left:auto; // 수정 : auto 값 주어 화면을 축소해도 알아서 요소간 간격이 조정되게 함
+      margin-left:auto; // nav bar 업데이트: auto 값 주어 화면을 축소해도 알아서 요소간 간격이 조정되게 함
       margin-right:auto; // 위와 동일
     }
       
-    .phone-trigger { // 폰 메뉴 관련 css, 폰 화면일때 제외하고 표시 안함
+    .phone-trigger { // 폰 메뉴 업데이트: 폰 화면일때 제외하고 표시 안함
       display: none;
     }
 
   }
 
-  @media (max-width: 1100px){ // 최소화면일 때 경우 고려하여 코드 작성
+  @media (max-width: 1100px){ // nav bar 업데이트: 최소화면일 때 경우 고려하여 코드 작성
     position: static;
     text-align: flex;
     top: 9px; 
@@ -182,13 +188,16 @@
     background-color: inherit;
     border: none;
     border-radius: 5px;
-    margin-left: 10px; // 수정 : 고정값 주어 일관성 있는 마진 줌
-    margin-right: 10px; // 수정 : 고정값 주어 일관성 있는 마진 줌
+    margin-left: 10px; // nav bar 업데이트: 고정값 주어 일관성 있는 마진 줌
+    margin-right: 10px; // nav bar 업데이트: 고정값 주어 일관성 있는 마진 줌
 
+    .page-trigger{
+      margin-left: 0px;
+    }
   }
 
   
-  @media (max-width: 600px){ // 휴대폰화면일 때 경우 고려하여 코드 작성
+  @media (max-width: 600px){ // 폰 메뉴 업데이트: 휴대폰화면일 때 경우 고려하여 코드 작성
     input ~ .page-trigger {
       clear: both;
       display: none;

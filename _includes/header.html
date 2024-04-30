@@ -17,7 +17,7 @@
           </span>
         </label>
 
-        <div class="phone-trigger" id="phone-trigger">
+        <div class="phone-trigger" id="phone-trigger"> <!--폰 메뉴 관련 html-->
           <a class="phone-link" href="/">Home</a>
           <a class="phone-link" href="/project">Project</a>
           <a class="phone-link" href="/fixbug">Fixbug</a>
@@ -33,12 +33,12 @@
           -->
         </div>
 
-        <div class="page-trigger">
-          <a class="page-link" href="/">Home</a>
-          <a class="page-link" href="/project">Project</a>
-          <a class="page-link" href="/fixbug">Fixbug</a>
-          <a class="page-link" href="/note">Note</a>
-          <a class="page-link" href="/profile">Profile</a>
+        <ul class="page-trigger">
+          <li><a class="page-link" href="/">Home</a></li>
+          <li><a class="page-link" href="/project">Project</a></li>
+          <li><a class="page-link" href="/fixbug">Fixbug</a></li>
+          <li><a class="page-link" href="/note">Note</a></li>
+          <li><a class="page-link" href="/profile">Profile</a></li>
           <!-- 수정 전 코드
           {%- for path in page_paths -%}
             {%- assign my_page = site.pages | where: "path", path | first -%}
@@ -47,7 +47,7 @@
             {%- endif -%}
           {%- endfor -%}
           -->
-        </div>
+        </ul>
       </nav>
     {%- endif -%}
   </div>
