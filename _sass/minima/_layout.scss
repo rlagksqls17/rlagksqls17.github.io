@@ -140,6 +140,18 @@
       margin-right:auto; // 위와 동일
     }
   }
+
+  @media (max-width: 1100px){ // 최소화면일 때 경우 고려하여 코드 작성
+    position: static;
+    text-align: flex;
+    top: 9px; 
+    right: $spacing-unit * .5;
+    background-color: inherit;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px; // 수정 : 고정값 주어 일관성 있는 마진 줌
+    margin-right: 10px; // 수정 : 고정값 주어 일관성 있는 마진 줌
+  }
 }
 
 
