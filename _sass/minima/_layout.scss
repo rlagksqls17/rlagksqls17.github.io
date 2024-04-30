@@ -132,7 +132,6 @@
     &:is(:last-child){ // nav bar 업데이트: (nav 바 요소 별 위치 설정)
       margin-right: 8%;
     }
-    background-color: black;
     
     margin-left:auto; // nav bar 업데이트: auto 값 주어 화면을 축소해도 알아서 요소간 간격이 조정되게 함
     margin-right:auto; // 위와 동일
