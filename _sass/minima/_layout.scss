@@ -41,7 +41,7 @@
   background-color: $background-color;
   border: 1px solid $border-color-01;
   border-radius: 5px;
-  margin-left: 340px; // 수정 : 고정값 주어 일관성 있는 마진 줌
+  margin-left: 25%; // 수정 : 고정값 주어 일관성 있는 마진 줌
   margin-right: 10px; // 수정 : 고정값 주어 일관성 있는 마진 줌
 
 
@@ -398,7 +398,7 @@
     position: fixed;
     left: 0;
     top: 0;
-    width: 350px;
+    width: 25%;
     height: 100%;
     z-index: 1;
     overflow-x: hidden;
