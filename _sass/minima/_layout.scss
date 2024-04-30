@@ -41,7 +41,7 @@
   background-color: $background-color;
   border: 1px solid $border-color-01;
   border-radius: 5px;
-  margin-left: 20%; // nav bar 업데이트 : 고정값 주어 navigation 바 일관성 있는 마진 줌
+  margin-left: 24%; // nav bar 업데이트 : 고정값 주어 navigation 바 일관성 있는 마진 줌
   margin-right: 10px; // nav bar 업데이트 : 고정값 주어 navigation 바 일관성 있는 마진 줌
 
 
@@ -110,7 +110,7 @@
 
   .page-trigger {
     display: inline-flex;
-    width: 100%; // nav bar 업데이트: nav bar 폭 조정
+    width: 97%; // nav bar 업데이트: nav bar 폭 조정
     flex: auto;
     align-items: baseline;
     justify-content: space-evenly;
@@ -127,7 +127,7 @@
     font-weight: bold;
     font-size: 24px;
     &:is(:first-child){ // nav bar 업데이트: (nav 바 요소 별 위치 설정)
-      margin-left: 12%;
+      margin-left: 15%;
     }
     &:is(:last-child){ // nav bar 업데이트: (nav 바 요소 별 위치 설정)
       margin-right: 8%;
@@ -139,6 +139,14 @@
 
   ul li {
     display: inline-flex;
+  }
+
+  ul li a{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 25em;
+    bottom:0;
   }
 
   @media screen and (min-width: $on-medium) {
