@@ -152,6 +152,14 @@
     margin-left: 10px; // 수정 : 고정값 주어 일관성 있는 마진 줌
     margin-right: 10px; // 수정 : 고정값 주어 일관성 있는 마진 줌
   }
+
+  
+  @media (max-width: 600px){ // 최소화면일 때 경우 고려하여 코드 작성
+    input ~ .page-trigger {
+      clear: both;
+      display: none;
+    }
+  }
 }
 
 
