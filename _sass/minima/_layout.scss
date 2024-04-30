@@ -41,8 +41,8 @@
   background-color: $background-color;
   border: 1px solid $border-color-01;
   border-radius: 5px;
-  margin-left: 340px; // 수정
-  margin-right: 10px; // 수정
+  margin-left: 340px; // 수정 : 고정값 주어 일관성 있는 마진 줌
+  margin-right: 10px; // 수정 : 고정값 주어 일관성 있는 마진 줌
 
 
   .nav-trigger {
@@ -97,12 +97,15 @@
     font-family: $base-font-family;
     font-weight: bold;
     font-size: 24px;
-    
-    // Gaps between nav items, but not on the last one
-    &:not(:last-child) {
-      margin-right: 0;
+    &:is(:first-child){ // 수정된 부분
+      margin-left: 12%;
     }
-    margin-left: 20px;
+    &:is(:last-child){ // 수정된 부분
+      margin-right: 8%;
+    }
+    
+    margin-left:auto; // 수정 : auto 값 주어 화면을 축소해도 알아서 요소간 간격이 조정되게 함
+    margin-right:auto; // 위와 동일
   }
 
   @media screen and (min-width: $on-medium) {
@@ -133,8 +136,8 @@
         margin-right: 8%;
       }
       
-      margin-left:auto;
-      margin-right:auto;
+      margin-left:auto; // 수정 : auto 값 주어 화면을 축소해도 알아서 요소간 간격이 조정되게 함
+      margin-right:auto; // 위와 동일
     }
   }
 }
