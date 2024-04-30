@@ -41,8 +41,8 @@
   background-color: $background-color;
   border: 1px solid $border-color-01;
   border-radius: 5px;
-  margin-left: 28%; // 수정
-  margin-right: 10%; // 수정
+  margin-left: 340px; // 수정
+  margin-right: 10px; // 수정
 
 
   .nav-trigger {
@@ -83,7 +83,7 @@
 
   .page-trigger {
     display: inline-flex;
-    width: 70%; // nav bar 폭 조정
+    width: 100%; // nav bar 폭 조정
     flex: auto;
     align-items: baseline;
     justify-content: space-evenly;
@@ -127,14 +127,14 @@
       display: inline;
       padding: 0;
       &:is(:first-child){ // 수정된 부분
-        margin-left: 15%;
+        margin-left: 12%;
       }
       &:is(:last-child){ // 수정된 부분
-        margin-right: 5%;
+        margin-right: 8%;
       }
       
-      margin-left:21%;
-      margin-right:21%;
+      margin-left:auto;
+      margin-right:auto;
     }
   }
 }
