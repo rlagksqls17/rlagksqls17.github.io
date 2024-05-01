@@ -17,12 +17,12 @@
   .site-header {
     border-top: 0px solid $border-color-03;
     border-bottom: 1.8px solid #3C629F;
-    min-height: $spacing-unit * 1.865;
+    min-height: $spacing-unit * 1.55;
     line-height: $base-line-height * $base-font-size * 2.25;
     // Positioning context for the mobile navigation icon
     position: sticky;
     top: 0px;
-    padding-top: 14px;
+    padding-top: 3px;
     backdrop-filter: blur(12px);
   }
 }
