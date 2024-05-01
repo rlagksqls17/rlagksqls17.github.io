@@ -155,11 +155,11 @@
   // nav bar 업데이트: 메뉴 버튼 클릭시 해당 텍스트가 천천히 커지도록 함 
   @import url(https://fonts.googleapis.com/css?family=Lato:100,300,900);
   .page-link:hover {
-    -webkit-transform: scale(1.3);
-    -moz-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    -o-transform: scale(1.3);
-    transform: scale(1.3);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transform: scale(1.15);
   }
 
   .page-link {
@@ -478,6 +478,10 @@
 /**
 * Home page
 **/
+.site-title{
+  position: absolute;
+}
+
 .hero{
   position: fixed;
   left: 0;
