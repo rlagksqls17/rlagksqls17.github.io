@@ -489,10 +489,12 @@
   overflow-x: hidden;
 }
 
-.site-title{
+.site-title{  // 블로그 타이틀 업데이트
   cursor: default;
   position: absolute;
   display: flex;
+  opacity: 0.7;
+  transition: 0.3s;
   font-family: $base-font-family;
   font-size: 4.5vh;
   font-weight: bold;
@@ -501,9 +503,25 @@
   margin-right: 25px;
   text-align: right;
   z-index: 10;
-  
+  transition: 0.5 ease-out;
 }
 
+.site-title:hover{
+  cursor: default;
+  position: absolute;
+  display: flex;
+  opacity: 0.8;
+  transition: 0.5s;
+  color: white;
+  font-family: $base-font-family;
+  font-size: 4.5vh;
+  font-weight: bold;
+  margin-top: 20%;
+  margin-left: 25%;
+  margin-right: 25px;
+  text-align: right;
+  z-index: 10;
+}
 
 
 .hero img{
