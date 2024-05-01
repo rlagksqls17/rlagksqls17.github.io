@@ -137,6 +137,22 @@
     margin-right:auto; // 위와 동일
   }
 
+  // wsss.tisttory.com/117 
+  // nav bar 업데이트: 메뉴 버튼 클릭시 해당 텍스트가 천천히 커지도록 함 
+  @import url(https://fonts.googleapis.com/css?family=Lato:100,300,900);
+  .page-link:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  .page-link {
+    -webkit-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+  }
+
   ul li {
     display: inline-flex;
   }
