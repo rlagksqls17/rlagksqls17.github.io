@@ -478,18 +478,6 @@
 /**
 * Home page
 **/
-.site-title{
-  cursor: default;
-  position: absolute;
-  display: flex;
-  font-family: $base-font-family;
-  font-size: 36px;
-  margin-top: 20%;
-  margin-left: 10%;
-  margin-right: 10%;
-  text-align: right;
-}
-
 .hero{
   position: fixed;
   left: 0;
@@ -499,6 +487,22 @@
   z-index: 1;
   overflow-x: hidden;
 }
+
+.site-title{
+  cursor: default;
+  position: absolute;
+  display: flex;
+  font-family: $base-font-family;
+  font-size: 38px;
+  font-weight: bold;
+  margin-top: 20%;
+  margin-left: 25%;
+  margin-right: 15%;
+  text-align: right;
+  z-index: 10;
+  
+}
+
 
 
 .hero img{
