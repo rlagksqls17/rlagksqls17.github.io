@@ -479,7 +479,15 @@
 * Home page
 **/
 .site-title{
+  cursor: default;
   position: absolute;
+  display: flex;
+  font-family: $base-font-family;
+  font-size: 36px;
+  margin-top: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: right;
 }
 
 .hero{
