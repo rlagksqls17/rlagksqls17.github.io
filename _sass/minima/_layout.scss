@@ -10,7 +10,8 @@
   position: sticky;
   top: -54px;
   padding-top: 14px;
-  backdrop-filter: blur(12px);
+  background-color: black;
+  backdrop-filter: none;
 }
 
 @media (max-width: 600px){ // 폰 메뉴 업데이트: 휴대폰화면일 때 경우 고려하여 코드 작성
