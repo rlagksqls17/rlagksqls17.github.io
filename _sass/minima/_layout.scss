@@ -59,24 +59,6 @@
   margin-left: 24%; // nav bar 업데이트 : 고정값 주어 navigation 바 일관성 있는 마진 줌
   margin-right: 10px; // nav bar 업데이트 : 고정값 주어 navigation 바 일관성 있는 마진 줌
 
-
-  .nav-trigger {
-    display: none;
-  }
-
-  .menu-icon {
-    float: right;
-    width: 85px;
-    height: 26px;
-    line-height: 0;
-    padding-top: 10px;
-    text-align: center;
-
-    > svg path {
-      fill: $border-color-03;
-    }
-  }
-
   /*
   label[for="nav-trigger"] { // 폰 메뉴 업데이트 전
     display: block;
@@ -87,31 +69,6 @@
     cursor: pointer;
   }
   */
-
-  input[id="nav-trigger"] + label{ // 폰 메뉴 업데이트
-    display: block;
-    width: 60px;
-    cursor: pointer;
-    position: relative;
-    z-index: 2;
-  }
-
-  input[id="nav-trigger"] + label + #phone-trigger{ // 폰 메뉴 업데이트
-    position:fixed;
-    float: right;
-    width:120px;
-    height:350px;
-    background:white;
-    padding:60px 25px 25px 25px;
-    box-sizing:border-box;
-    top:0;
-    left:-150px;
-    z-index:1;
-  }
-
-  input[id="nav-trigger"]:checked + label + #phone-trigger{
-    left:0;
-  }
 
   input ~ .trigger {
     clear: both;
@@ -152,7 +109,7 @@
     margin-right:auto; // 위와 동일
   }
 
-  // wsss.tisttory.com/117 
+  // 출처: wsss.tisttory.com/117 
   // nav bar 업데이트: 메뉴 버튼 클릭시 해당 텍스트가 천천히 커지도록 함 
   @import url(https://fonts.googleapis.com/css?family=Lato:100,300,900);
   .page-link:hover {
@@ -179,6 +136,18 @@
     right: 25em;
     bottom:0;
   }
+  
+  #menu { // 폰 날개 업데이트 
+    cursor: pointer;
+    display: block;
+    font-size: 3px;
+    height: 40px;
+    > svg path{
+      fill: $border-color-03;
+    }
+    position: fixed;
+    text-align: center;
+  }
 
   @media screen and (min-width: $on-medium) {
     position: static;
@@ -186,11 +155,7 @@
     border: none;
     background-color: inherit;
 
-    label[for="nav-trigger"] {
-      display: none;
-    }
-
-    .menu-icon {
+    #menu {  // 폰 날개 업데이트 
       display: none;
     }
 
@@ -211,11 +176,6 @@
       margin-left:auto; // nav bar 업데이트: auto 값 주어 화면을 축소해도 알아서 요소간 간격이 조정되게 함
       margin-right:auto; // 위와 동일
     }
-      
-    .phone-trigger { // 폰 메뉴 업데이트: 폰 화면일때 제외하고 표시 안함
-      display: none;
-    }
-
   }
 
   @media (max-width: 1100px){ // nav bar 업데이트: 최소화면일 때 경우 고려하여 코드 작성
@@ -236,13 +196,12 @@
 
   
   @media (max-width: 600px){ // 폰 메뉴 업데이트: 휴대폰화면일 때 경우 고려하여 코드 작성
-    input ~ .page-trigger {
+    .page-trigger {
       clear: both;
       display: none;
     }
   }
 }
-
 
 
 /**
