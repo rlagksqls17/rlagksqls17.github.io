@@ -204,18 +204,23 @@
 }
 
 menu {  // 폰 날개 업데이트
-  background: #FFF;
-  bottom: 0;
-  margin: 0;
-  padding: 0;
-  position: fixed;
-  left: -320px;
-  top:0;
-  width: 65%;
-  z-index: 1;
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  display: none;
+
+  @media (max-width: 600px){
+    display:block; 
+    background: #FFF;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    left: -500px;
+    top:0;
+    width: 65%;
+    z-index: 1;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
 }
 
 html.active menu{
