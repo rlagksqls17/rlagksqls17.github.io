@@ -1,5 +1,4 @@
 <header class="site-header">
-
   <div class="header-wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
@@ -32,4 +31,30 @@
       </nav>
     {%- endif -%}
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(function() {
+      var w = $(window).width(),
+        h = $(window).height();
+      //$('section').width(w);
+      $('section').height(h);
+      $('menu .container').height(h - 60);
+      $('body').prepend('<div id="overlay">');
+  
+      $('#menu').click(function() {$('html').addClass('active');});
+      $('#close-menu').click(function() {$('html').removeClass('active');});
+      $('#overlay').click(function() {$('html').removeClass('active');});
+      $(window).resize(function() {
+        var w = $(window).width(),
+          h = $(window).height();
+        //$('section').width(w);
+        $('section').height(h);
+        $('menu .container').height(h - 60);
+      });
+    });
+  </script>  
 </header>
+
+<menu> <!--폰 날개 업데이트-->
+  <div>test</div>
+</menu>
