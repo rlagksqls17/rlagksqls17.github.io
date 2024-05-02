@@ -54,7 +54,34 @@
 }
 
 // 커스텀
-
+// 폰 날개 업데이트
+@media (max-width: 600px){ // 폰 메뉴 업데이트: 휴대폰화면일 때 경우 고려하여 코드 작성
+  #overlay {
+    background: #000;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    width: 100%;
+    z-index: 99;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+  
+  html.active #overlay {
+    opacity: .65;
+    visibility: visible;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }  
+}
 /*
 .site-title {
   @include relative-font-size(1.625);

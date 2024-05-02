@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-  $(function() {
-    var w = $(window).width(),
-      h = $(window).height();
-    //$('section').width(w);
-    $('#menu').click(function() {$('html').addClass('active');});
-    $('#close-menu').click(function(){$('html').removeClass('active');});
-  });
-</script>  
+<!DOCTYPE html>  
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   {%- include head.html -%}
   <body>
