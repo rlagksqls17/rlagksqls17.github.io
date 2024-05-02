@@ -220,6 +220,11 @@ menu {  // 폰 날개 업데이트
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
+
+    #close-menu{
+      margin-left: 15px;
+      margin-top: 15px;
+    }
   }
 }
 
