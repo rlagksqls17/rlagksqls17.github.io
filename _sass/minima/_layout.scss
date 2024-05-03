@@ -295,13 +295,20 @@ html.active menu{
 }
 
 // 폰 날개 업데이트: 원형 사진 이미지 넣기
-#circle-img {
+#circle {
   width: 140px;
   height: 140px;
   margin-left: 70px;
   margin-top: 60px;
   border-radius: 50%;
-  background-color: green;
+  z-index: 19;
+}
+
+.circle-img{
+  z-index: 17;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
 }
 
 /**
