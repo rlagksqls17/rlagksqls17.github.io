@@ -372,8 +372,18 @@ html.active menu{
   .menu-box ul li{
     margin-top: 15px;
     text-align: center;
+  }  
+}
+
+
+// github 등 링크 달기
+@media (max-width: 600px){
+  .icon-github{
+    width: 20px;
+    height: 20px;
   }
 }
+
 
 /**
  * Site footer
