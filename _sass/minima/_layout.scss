@@ -356,11 +356,14 @@ html.active menu{
     color: white;
     line-height: $base-line-height;
     display: inline;
-    text-decoration: none;
     padding: 5px 10px;
     font-family: $base-font-family;
     font-weight: bold;
     font-size: 20px;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .phone-link:hover {
+    text-decoration: none;
   }
 }
 
