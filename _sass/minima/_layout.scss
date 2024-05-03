@@ -317,7 +317,7 @@ html.active menu{
   .title-box {
     width: 210px;
     height: 40px;
-    background-color: green;
+    //background-color: green;
     margin-top: 23px;
     margin-left: 35px;
   }
@@ -335,7 +335,7 @@ html.active menu{
 // 폰 날개 업데이트: 메뉴 링크 달기
 @media (max-width: 600px){
   .menu-box {
-    background-color: white;
+    background-color: #292C36;
     margin-top: 45px;
     margin-bottom: 10px;
     height: 25vh;
@@ -343,10 +343,24 @@ html.active menu{
   }
   .link-box {
     position: absolute;
-    background-color: green;
+    //background-color: green;
     margin-top: 20px;
     bottom: 20px;
     z-index: -1;
+  }
+  .phone-link-ul{
+    list-style-type: none;
+  }
+  .phone-link {
+    cursor: pointer;
+    color: white;
+    line-height: $base-line-height;
+    display: inline;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-family: $base-font-family;
+    font-weight: bold;
+    font-size: 20px;
   }
 }
 
