@@ -335,10 +335,10 @@ html.active menu{
 // 폰 날개 업데이트: 메뉴 링크 달기
 @media (max-width: 600px){
   .menu-box {
-    background-color: #292C36;
-    margin-top: 45px;
+    // background-color: green; // #292C36;
+    margin-top: 42px;
     margin-bottom: 10px;
-    height: 25vh;
+    height: 33vh;
     z-index: 1;
   }
   .link-box {
@@ -349,7 +349,9 @@ html.active menu{
     z-index: -1;
   }
   .phone-link-ul{
+    margin-left: 0;
     list-style-type: none;
+    background-color: #292C36;
   }
   .phone-link {
     cursor: pointer;
@@ -360,12 +362,16 @@ html.active menu{
     font-weight: bold;
     font-size: 17px;
     -webkit-tap-highlight-color: transparent;
-    a {
-      color: black;
-    }
+    margin-top: 30px;
+    margin-bottom: auto;
+    // background-color: yellow;
   }
   .phone-link:hover {
     text-decoration: none;
+  }
+  .menu-box ul li{
+    margin-top: 15px;
+    text-align: center;
   }
 }
 
