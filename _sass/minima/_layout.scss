@@ -316,18 +316,34 @@ html.active menu{
 @media (max-width: 600px){
   .title-box {
     width: 210px;
-    height: 80px;
+    height: 40px;
+    background-color: green;
     margin-top: 23px;
     margin-left: 35px;
-    background-color: green;
   }
   .title {
     cursor: default;
     text-align: center;
-    color: white;
+    color: lightgray;
     font-family: $base-font-family;
     font-size: 25px;
     font-weight: bold;
+    opacity: 0.7;
+  }
+}
+
+// 폰 날개 업데이트: 메뉴 링크 달기
+@media (max-width: 600px){
+  .menu-box {
+    background-color: white;
+    margin-top: 45px;
+    height: 40%;
+  }
+  .link-box {
+    position: absolute;
+    background-color: green;
+    height: 50px;
+    bottom: 30px;
   }
 }
 
