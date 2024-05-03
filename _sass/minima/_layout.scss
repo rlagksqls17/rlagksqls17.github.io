@@ -337,13 +337,16 @@ html.active menu{
   .menu-box {
     background-color: white;
     margin-top: 45px;
-    height: 40%;
+    margin-bottom: 10px;
+    height: 25vh;
+    z-index: 1;
   }
   .link-box {
-    position: absolute;
+    position: fixed;
     background-color: green;
-    height: 50px;
-    bottom: 30px;
+    margin-top: 20px;
+    bottom: 20px;
+    z-index: -1;
   }
 }
 
