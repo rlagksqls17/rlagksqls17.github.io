@@ -315,16 +315,15 @@ html.active menu{
 // 폰 날개 업데이트: 홈페이지 타이틀 넣기
 @media (max-width: 600px){
   .title-box {
-    width: 204px;
+    width: 210px;
     height: 80px;
     margin-top: 23px;
-    margin-left: 38px;
+    margin-left: 35px;
     background-color: green;
   }
   .title {
     cursor: default;
     text-align: center;
-    position: absolute;
     color: white;
     font-family: $base-font-family;
     font-size: 25px;
