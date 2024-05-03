@@ -6,8 +6,9 @@
     //$('section').width(w);
     $('#menu').click(function() {$('html').addClass('active');});
     $('#close-menu').click(function(){$('html').removeClass('active');});
-    $('.page-content').prepend('<div id="overlay">')
-    $('.site-header').prepend('<div id="overlay">')
+    $('.page-content').prepend('<div id="overlay">');
+    $('.site-header').prepend('<div id="overlay">');
+    $('#overlay').click(function(){$('html').removeClass('active');});
   });
 </script>  
 
@@ -50,11 +51,11 @@
   <svg id="close-menu" viewPort="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg">
     <line x1="1" y1="15" 
           x2="15" y2="1" 
-          stroke="black" 
+          stroke="#96979D" 
           stroke-width="2"/>
     <line x1="1" y1="1" 
           x2="15" y2="15" 
-          stroke="black" 
+          stroke="#96979D" 
           stroke-width="2"/>
   </svg>
 </menu>
