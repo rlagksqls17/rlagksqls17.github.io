@@ -618,7 +618,7 @@ html.active menu{
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid #5F485E;
+  border-top: 1px solid gray;
 }
 
 html.active .site-footer{
@@ -756,6 +756,12 @@ html.active .site-footer{
 .post-link {
   display: block;
   @include relative-font-size(1.5);
+}
+
+.post-link:hover{
+  display: block;
+  @include relative-font-size(1.5);
+  text-decoration: none;
 }
 
 @media (max-width: 768px) { /* 화면 너비가 768px 이하인 경우에만 적용 */
