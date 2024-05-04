@@ -160,6 +160,29 @@
     margin-right:auto; // 위와 동일
   }
 
+  @media (max-width: 1100px){ //  nav bar 업데이트: nav bar 위치 설정
+    .page-link {
+      cursor: pointer;
+      color: $text-color;
+      line-height: $base-line-height;
+      display: inline;
+      text-decoration: none; // nav bar 업데이트: 마우스 갖다댈시 밑줄 생성 제거
+      padding: 5px 10px;
+      font-family: $base-font-family;
+      font-weight: bold;
+      font-size: 25px;
+      &:is(:first-child){ // nav bar 업데이트: (nav 바 요소 별 위치 설정)
+        margin-left: 15%;
+      }
+      &:is(:last-child){ // nav bar 업데이트: (nav 바 요소 별 위치 설정)
+        margin-right: 8%;
+      }
+      
+      margin-left:auto; // nav bar 업데이트: auto 값 주어 화면을 축소해도 알아서 요소간 간격이 조정되게 함
+      margin-right:auto; // ㄹ 동일
+    }  
+  }
+
   // 출처: wsss.tisttory.com/117 
   // nav bar 업데이트: 메뉴 버튼 클릭시 해당 텍스트가 천천히 커지도록 함 
   @import url(https://fonts.googleapis.com/css?family=Lato:100,300,900);
@@ -482,11 +505,8 @@ html.active menu{
 
 
 @media (max-width: 600px){ // 폰 footer 업데이트: footer 문구 위치 설정
-  .footer-col {
-    margin-bottom: $spacing-unit * .5;
-    //background-color: green;
-    margin-left: 0;
-    text-align: center;
+  .site-footer {
+    border-top: 1px solid gray;
   }
 }
 
