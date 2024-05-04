@@ -148,7 +148,7 @@
     padding: 5px 10px;
     font-family: $base-font-family;
     font-weight: bold;
-    font-size: 26px;
+    font-size: 25px;
     &:is(:first-child){ // nav bar 업데이트: (nav 바 요소 별 위치 설정)
       margin-left: 15%;
     }
@@ -315,11 +315,11 @@ html.active menu{
 // 폰 날개 업데이트: 홈페이지 타이틀 넣기
 @media (max-width: 600px){
   .title-box {
-    width: 210px;
+    width: 240px;
     height: 40px;
     //background-color: green;
     margin-top: 23px;
-    margin-left: 35px;
+    margin-left: 20px;
   }
   .title {
     cursor: default;
@@ -663,7 +663,7 @@ html.active menu{
   font-weight: bold;
   margin-top: 20%;
   margin-left: 25%;
-  margin-right: 25px;
+  margin-right: 50px;
   text-align: right;
   z-index: 10;
   transition: 0.5 ease-out;
@@ -677,11 +677,11 @@ html.active menu{
   transition: 0.5s;
   color: white;
   font-family: $base-font-family;
-  font-size: 4.5vh;
+  font-size: 4.1vh;
   font-weight: bold;
   margin-top: 20%;
   margin-left: 25%;
-  margin-right: 25px;
+  margin-right: 50px;
   text-align: right;
   z-index: 10;
 }
