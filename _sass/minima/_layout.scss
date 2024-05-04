@@ -20,12 +20,46 @@
   backdrop-filter: none;
 }
 
+@media (max-width: 900px){ // 폰 메뉴 업데이트: 휴대폰화면일 때 경우 고려하여 코드 작성
+  .site-header {
+    z-index: 4;
+    border-top: 0px solid $border-color-03;
+    border-bottom: none;
+    min-height: $spacing-unit * 1.5;
+    line-height: $base-line-height * $base-font-size * 2.25;
+    // Positioning context for the mobile navigation icon
+    position: sticky;
+    top: 0px;
+    padding-top: 3px;
+    background-color: #2E2E2E;;
+
+    // 폰 날개 업데이트 : 메뉴 클릭시 헤더가 치워짐
+    -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+    -moz-animation: matrix(1, 0, 0, 1, 0, 0);
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+
+  html.active .site-header{
+    z-index: 4;
+    -webkit-transform: matrix(1, 0, 0, 1, 280, 0);
+    -moz-transform: matrix(1, 0, 0, 1, 280, 0);
+    transform: matrix(1, 0, 0, 1, 280, 0);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+}
+
+
 @media (max-width: 600px){ // 폰 메뉴 업데이트: 휴대폰화면일 때 경우 고려하여 코드 작성
   .site-header {
     z-index: 4;
     border-top: 0px solid $border-color-03;
     border-bottom: none;
-    min-height: $spacing-unit * 1.3;
+    min-height: $spacing-unit * 1.5;
     line-height: $base-line-height * $base-font-size * 2.25;
     // Positioning context for the mobile navigation icon
     position: sticky;
@@ -54,6 +88,34 @@
 }
 
 // 커스텀
+@media (max-width: 900px){ // 폰 날개 업데이트: overlay=> 폰 메뉴 클릭시 나머지 화면 검은색이 됨
+  #overlay {
+    background: #000;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    width: 100%;
+    z-index: 99;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+  
+  html.active #overlay {
+    opacity: .65;
+    visibility: visible;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }  
+}
+
 @media (max-width: 600px){ // 폰 날개 업데이트: overlay=> 폰 메뉴 클릭시 나머지 화면 검은색이 됨
   #overlay {
     background: #000;
@@ -160,29 +222,6 @@
     margin-right:auto; // 위와 동일
   }
 
-  @media (max-width: 1100px){ //  nav bar 업데이트: nav bar 위치 설정
-    .page-link {
-      cursor: pointer;
-      color: $text-color;
-      line-height: $base-line-height;
-      display: inline;
-      text-decoration: none; // nav bar 업데이트: 마우스 갖다댈시 밑줄 생성 제거
-      padding: 5px 10px;
-      font-family: $base-font-family;
-      font-weight: bold;
-      font-size: 25px;
-      &:is(:first-child){ // nav bar 업데이트: (nav 바 요소 별 위치 설정)
-        margin-left: 15%;
-      }
-      &:is(:last-child){ // nav bar 업데이트: (nav 바 요소 별 위치 설정)
-        margin-right: 8%;
-      }
-      
-      margin-left:auto; // nav bar 업데이트: auto 값 주어 화면을 축소해도 알아서 요소간 간격이 조정되게 함
-      margin-right:auto; // ㄹ 동일
-    }  
-  }
-
   // 출처: wsss.tisttory.com/117 
   // nav bar 업데이트: 메뉴 버튼 클릭시 해당 텍스트가 천천히 커지도록 함 
   @import url(https://fonts.googleapis.com/css?family=Lato:100,300,900);
@@ -216,6 +255,8 @@
     display: block;
     font-size: 3px;
     height: 40px;
+    margin-top: 3px;
+    margin-left: 10px;
     -webkit-tap-highlight-color: transparent;
     > svg path{
       fill: $border-color-03;
@@ -253,7 +294,7 @@
     }
   }
 
-  @media (max-width: 1100px){ // nav bar 업데이트: 최소화면일 때 경우 고려하여 코드 작성
+  @media (max-width: 900px){ // nav bar 업데이트: 최소화면일 때 경우 고려하여 코드 작성
     position: static;
     text-align: flex;
     top: 9px; 
@@ -265,7 +306,23 @@
     margin-right: 10px; // nav bar 업데이트: 고정값 주어 일관성 있는 마진 줌
 
     .page-trigger{
-      margin-left: 11px;
+      display: none;
+    }
+    .page-link{
+      display: none;
+    }
+    #menu {  // 폰 날개 업데이트 
+      display: block;
+      cursor: pointer;
+      display: block;
+      font-size: 3px;
+      height: 40px;
+      -webkit-tap-highlight-color: transparent;
+      > svg path{
+        fill: $border-color-03;
+      }
+      position: fixed;
+      text-align: center;
     }
   }
 
@@ -280,6 +337,34 @@
 
 menu {  // 폰 날개 업데이트: 날개 옆 색상 및 형식 설정
   display: none;
+  @media (max-width: 900px){
+    display:block; 
+    background: #292C36;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    left: -500px;
+    top:0;
+    width: 280px;
+    height: 100%;
+    z-index: 1;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+
+    #close-menu{
+      -webkit-tap-highlight-color: transparent;
+      margin-left: 15px;
+      margin-top: 15px;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
 
   @media (max-width: 600px){
     display:block; 
@@ -308,7 +393,6 @@ menu {  // 폰 날개 업데이트: 날개 옆 색상 및 형식 설정
       left: 0;
       top: 0;
     }
-
   }
 }
 
@@ -317,6 +401,23 @@ html.active menu{
   z-index: 999;
 }
 
+// 폰 날개 업데이트: 원형 사진 이미지 넣기
+@media (max-width: 900px){
+  #circle {
+    width: 140px;
+    height: 140px;
+    margin-left: 70px;
+    margin-top: 60px;
+    border-radius: 50%;
+    z-index: 19;
+  }
+  .circle-img{
+    z-index: 17;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+  }
+}
 // 폰 날개 업데이트: 원형 사진 이미지 넣기
 @media (max-width: 600px){
   #circle {
@@ -332,6 +433,46 @@ html.active menu{
     width: 140px;
     height: 140px;
     border-radius: 50%;
+  }
+}
+
+// 폰 날개 업데이트: 홈페이지 타이틀 넣기
+@media (max-width: 900px){
+  .title-box {
+    width: 240px;
+    height: 40px;
+    //background-color: green;
+    margin-top: 23px;
+    margin-left: 20px;
+  }
+  .title {
+    cursor: default;
+    text-align: center;
+    color: lightgray;
+    font-family: $base-font-family;
+    font-size: 25px;
+    font-weight: bold;
+    opacity: 0.7;
+  }
+}
+
+// 폰 날개 업데이트: 홈페이지 타이틀 넣기
+@media (max-width: 900px){
+  .title-box {
+    width: 240px;
+    height: 40px;
+    //background-color: green;
+    margin-top: 23px;
+    margin-left: 20px;
+  }
+  .title {
+    cursor: default;
+    text-align: center;
+    color: lightgray;
+    font-family: $base-font-family;
+    font-size: 25px;
+    font-weight: bold;
+    opacity: 0.7;
   }
 }
 
@@ -354,6 +495,60 @@ html.active menu{
     opacity: 0.7;
   }
 }
+
+// 폰 날개 업데이트: 메뉴 링크 달기
+@media (max-width: 900px){
+  .menu-box {
+    // background-color: green; // #292C36;
+    margin-top: 42px;
+    margin-bottom: 10px;
+    height: 33vh;
+    z-index: 1;
+  }
+  .talk-box {
+    position: absolute;
+    //background-color: green;
+    width: 280px;
+    margin-top: 20px;
+    bottom: 20px;
+    z-index: -1;
+    display: inline;
+    text-align: center;
+    //background-color: green;
+  }
+  .talk {
+    font-size: 17px;
+    font-family: $base-font-family;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .phone-link-ul{
+    margin-left: 0;
+    list-style-type: none;
+    background-color: #292C36;
+  }
+  .phone-link {
+    cursor: pointer;
+    line-height: $base-line-height;
+    display: inline;
+    padding: 5px 10px;
+    font-family: $base-font-family;
+    font-weight: bold;
+    font-size: 18px;
+    -webkit-tap-highlight-color: transparent;
+    margin-top: 30px;
+    margin-bottom: auto;
+    // background-color: yellow;
+  }
+  .phone-link:hover {
+    text-decoration: none;
+  }
+  .menu-box ul li{
+    margin-top: 15px;
+    text-align: center;
+  }  
+}
+
 
 // 폰 날개 업데이트: 메뉴 링크 달기
 @media (max-width: 600px){
@@ -494,7 +689,7 @@ html.active menu{
 }
 
 
-@media (max-width: 1100px){ //  footer 업데이트: footer 문구 위치 설정
+@media (max-width: 900px){ //  footer 업데이트: footer 문구 위치 설정
   .footer-col {
     margin-bottom: $spacing-unit * .5;
     //background-color: green;
@@ -521,7 +716,7 @@ html.active menu{
 .page-content {
   padding: $spacing-unit 0;
   flex: 1 0 auto;
-  padding-left:400px;
+  padding-left:25%;
 }
 
 .page-heading {
@@ -556,6 +751,29 @@ html.active menu{
     padding-left:0px;
   }
 }
+
+@media (max-width: 900px){ // 폰 메뉴 업데이트: 휴대폰화면일 때 경우 고려하여 코드 작성
+  .page-content {
+
+    // 폰 날개 업데이트 : 메뉴 클릭시 내용있는 부분이 치워짐
+    -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+    -moz-animation: matrix(1, 0, 0, 1, 0, 0);
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+
+  html.active .page-content{
+    -webkit-transform: matrix(1, 0, 0, 1, 280, 0);
+    -moz-transform: matrix(1, 0, 0, 1, 280, 0);
+    transform: matrix(1, 0, 0, 1, 280, 0);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+}
+
 
 
 @media (max-width: 600px){ // 폰 메뉴 업데이트: 휴대폰화면일 때 경우 고려하여 코드 작성
@@ -756,7 +974,7 @@ html.active menu{
   }
 }
 
-@media (max-width: 1100px){
+@media (max-width: 900px){
   .hero{
     display: none;
   }

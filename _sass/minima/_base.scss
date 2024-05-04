@@ -201,14 +201,22 @@ pre {
   max-width: calc(#{$content-width} - (#{$spacing-unit}));
   margin-right: auto;
   margin-left: auto;
-  padding-right: $spacing-unit * .5;
-  padding-left: $spacing-unit * .5;
+  padding-right: $spacing-unit * .9;
+  padding-left: $spacing-unit * .9;
   @extend %clearfix;
 
   @media screen and (min-width: $on-large) {
     max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
+  }
+  
+  @media (max-width: 900px){ // 메뉴 업데이트: 휴대폰화면일 때 경우 고려하여 코드 작성
+    max-width: 100%;
+  }
+    
+  @media (max-width: 600px){ // 폰 메뉴 업데이트: 휴대폰화면일 때 경우 고려하여 코드 작성
+    padding-right: $spacing-unit * .5;
+    padding-left: $spacing-unit * .5;
+    max-width: 100%;
   }
 }
 
