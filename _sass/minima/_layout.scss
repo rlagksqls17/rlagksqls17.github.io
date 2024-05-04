@@ -392,8 +392,7 @@ html.active menu{
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $border-color-01;
-  padding: $spacing-unit 0;
+  border-top: 1px solid #5F485E;
 }
 
 .footer-heading {
@@ -414,12 +413,17 @@ html.active menu{
 .footer-col-wrapper,
 .social-links {
   @include relative-font-size(0.9375);
+  
   color: $brand-color;
 }
 
-.footer-col {
+.footer-col {   // footer 업데이트: footer 문구 위치 설정
   margin-bottom: $spacing-unit * .5;
+  //background-color: green;
+  margin-left: 45%;
+  text-align: center;
 }
+
 
 .footer-col-1,
 .footer-col-2 {
@@ -465,6 +469,27 @@ html.active menu{
     }
   }
 }
+
+
+@media (max-width: 1100px){ //  footer 업데이트: footer 문구 위치 설정
+  .footer-col {
+    margin-bottom: $spacing-unit * .5;
+    //background-color: green;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 600px){ // 폰 footer 업데이트: footer 문구 위치 설정
+  .footer-col {
+    margin-bottom: $spacing-unit * .5;
+    //background-color: green;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
 
 
 
