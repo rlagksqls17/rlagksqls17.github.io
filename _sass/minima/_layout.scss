@@ -341,12 +341,22 @@ html.active menu{
     height: 33vh;
     z-index: 1;
   }
-  .link-box {
+  .talk-box {
     position: absolute;
     //background-color: green;
+    width: 280px;
     margin-top: 20px;
     bottom: 20px;
     z-index: -1;
+    display: inline;
+    text-align: center;
+    //background-color: green;
+  }
+  .talk {
+    font-size: 17px;
+    font-family: $base-font-family;
+    font-weight: bold;
+    font-style: italic;
   }
   .phone-link-ul{
     margin-left: 0;
@@ -376,13 +386,6 @@ html.active menu{
 }
 
 
-// github 등 링크 달기
-@media (max-width: 600px){
-  .icon-github{
-    width: 20px;
-    height: 20px;
-  }
-}
 
 
 /**
