@@ -1,8 +1,8 @@
 ---
 layout: base
 ---
-<article class="post">
 
+<article class="post">
   <header class="post-header">
     <h1 class="post-title">{{ page.title | escape }}</h1>
   </header>
@@ -47,3 +47,33 @@ layout: base
     </div>
   </div>
 </article>
+
+<!-- Load jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Load TweenMax -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<!-- Load ScrollTrigger, ScrollSmoother, Flip plugins -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollSmoother.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/Flip.min.js"></script>
+
+<script>
+    // Accordion 
+    const groups = gsap.utils.toArray(".accordion-group");
+
+    groups.forEach((el) => {
+        el.addEventListener("click", () => toggleMenu(el));
+    });
+
+    function toggleMenu(el) {
+        let state = Flip.getState(el.querySelector(".accordion-content"));
+        el.classList.toggle("active");
+        Flip.from(state, {
+            duration: 0.5,
+            ease: "Circ.easeInOut",
+            onComplete: () => ScrollTrigger.refresh()
+        });
+    }
+
+    ScrollTrigger.addEventListener("refresh", () => console.log("refresh"));
+</script>

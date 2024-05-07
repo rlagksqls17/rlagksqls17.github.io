@@ -1,2 +1,74 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+:root {
+    --accordion-menu-fs: 1.8rem;
+    --accordion-icon-width: 24px;
+    --accordion-icon-weight: 2px;
+  }
+
+.accordion {
+width: 100%;
+margin: 0;
+}
+
+.accordion-group {
+    &:is(.active) {
+      .accordion-menu:before {
+        rotate: 0deg;
+      }
+    }
+  
+    &:nth-child(1) {
+      background: #222;
+    }
+    &:nth-child(2) {
+      background: #333;
+    }
+    &:nth-child(3) {
+      background: #444;
+    }
+  }
+
+.accordion-menu {
+font-size: var(--accordion-menu-fs);
+color: white;
+padding: 5vw;
+cursor: pointer;
+user-select: none;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: relative;
+
+&:before {
+    height: var(--accordion-icon-weight);
+    position: absolute;
+    right: 5vw;
+    background: white;
+    content: "";
+    transition: all 0.3s ease;
+    width: var(--accordion-icon-width);
+    rotate: -90deg;
+}
+
+&:after {
+    height: var(--accordion-icon-weight);
+    position: absolute;
+    right: 5vw;
+    background: white;
+    content: "";
+    transition: all 0.3s ease;
+    width: var(--accordion-icon-width);
+}
+}
+
+.accordion-content {
+    height: 0;
+    overflow: hidden;
+    font-size: 1rem;
+  }
+  
+  .accordion-content.expanded {
+    height: 0;
+    overflow: hidden;
+}
