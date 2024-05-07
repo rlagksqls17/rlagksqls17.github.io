@@ -20,7 +20,7 @@
   backdrop-filter: none;
 }
 
-@media (max-width: 900px){ // 폰 메뉴 업데이트: 휴대폰화면일 때 경우 고려하여 코드 작성
+@media (max-width: 1050px){ // 폰 메뉴 업데이트: 휴대폰화면일 때 경우 고려하여 코드 작성
   .site-header {
     z-index: 4;
     border-top: 0px solid $border-color-03;
@@ -88,7 +88,7 @@
 }
 
 // 커스텀
-@media (max-width: 900px){ // 폰 날개 업데이트: overlay=> 폰 메뉴 클릭시 나머지 화면 검은색이 됨
+@media (max-width: 1050px){ // 폰 날개 업데이트: overlay=> 폰 메뉴 클릭시 나머지 화면 검은색이 됨
   #overlay {
     background: #000;
     bottom: 0;
@@ -294,7 +294,7 @@
     }
   }
 
-  @media (max-width: 900px){ // nav bar 업데이트: 최소화면일 때 경우 고려하여 코드 작성
+  @media (max-width: 1050px){ // nav bar 업데이트: 최소화면일 때 경우 고려하여 코드 작성
     position: static;
     text-align: flex;
     top: 9px; 
@@ -337,7 +337,7 @@
 
 menu {  // 폰 날개 업데이트: 날개 옆 색상 및 형식 설정
   display: none;
-  @media (max-width: 900px){
+  @media (max-width: 1050px){
     display:block; 
     background: #292C36;
     bottom: 0;
@@ -402,7 +402,7 @@ html.active menu{
 }
 
 // 폰 날개 업데이트: 원형 사진 이미지 넣기
-@media (max-width: 900px){
+@media (max-width: 1050px){
   #circle {
     width: 140px;
     height: 140px;
@@ -437,7 +437,7 @@ html.active menu{
 }
 
 // 폰 날개 업데이트: 홈페이지 타이틀 넣기
-@media (max-width: 900px){
+@media (max-width: 1050px){
   .title-box {
     width: 240px;
     height: 40px;
@@ -465,7 +465,7 @@ html.active menu{
 }
 
 // 폰 날개 업데이트: 홈페이지 타이틀 넣기
-@media (max-width: 900px){
+@media (max-width: 1050px){
   .title-box {
     width: 240px;
     height: 40px;
@@ -505,7 +505,7 @@ html.active menu{
 }
 
 // 폰 날개 업데이트: 메뉴 링크 달기
-@media (max-width: 900px){
+@media (max-width: 1050px){
   .menu-box {
     // background-color: green; // #292C36;
     margin-top: 42px;
@@ -518,7 +518,7 @@ html.active menu{
     //background-color: green;
     width: 280px;
     margin-top: 20px;
-    bottom: 20px;
+    bottom: 80px;
     z-index: -1;
     display: inline;
     text-align: center;
@@ -701,7 +701,7 @@ html.active .site-footer{
 }
 
 
-@media (max-width: 900px){ //  footer 업데이트: footer 문구 위치 설정
+@media (max-width: 1050px){ //  footer 업데이트: footer 문구 위치 설정
   .footer-col {
     margin-bottom: $spacing-unit * .5;
     //background-color: green;
@@ -770,7 +770,7 @@ html.active .site-footer{
   }
 }
 
-@media (max-width: 900px){ // 폰 메뉴 업데이트: 휴대폰화면일 때 경우 고려하여 코드 작성
+@media (max-width: 1050px){ // 폰 메뉴 업데이트: 휴대폰화면일 때 경우 고려하여 코드 작성
   .page-content {
     // 폰 날개 업데이트 : 메뉴 클릭시 내용있는 부분이 치워짐
     -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
@@ -1028,7 +1028,7 @@ html.active .site-footer{
   }
 }
 
-@media (max-width: 900px){
+@media (max-width: 1050px){
   .hero{
     display: none;
   }

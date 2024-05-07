@@ -209,7 +209,7 @@ pre {
     max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
   }
   
-  @media (max-width: 900px){ // 메뉴 업데이트: 휴대폰화면일 때 경우 고려하여 코드 작성
+  @media (max-width: 1050px){ // 메뉴 업데이트: 휴대폰화면일 때 경우 고려하여 코드 작성
     max-width: 100%;
   }
     
