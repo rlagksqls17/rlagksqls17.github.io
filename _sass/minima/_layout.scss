@@ -994,7 +994,7 @@ html.active .site-footer{
   line-height: 1.15;
   padding-right: $spacing-unit * .9;
   padding-left: $spacing-unit * .9;
-  text-align: left;
+  text-align: center;
 
   @media screen and (min-width: $on-large) {
     @include relative-font-size(2.4);
