@@ -165,7 +165,7 @@ code {
   font-size: 0.9375em;
   border: 1px solid $border-color-01;
   border-radius: 3px;
-  background-color: $background-color;
+  background-color: black;
 }
 
 code {
@@ -185,13 +185,13 @@ pre {
 
 .highlight {
   border-radius: 3px;
-  background:$background-color;
+  background:black;
   @extend %vertical-rhythm;
   padding-right: $spacing-unit * .9;
   padding-left: $spacing-unit * .9;
   
   .highlighter-rouge & {
-    background:$background-color;
+    background:black;
   }
 }
 
