@@ -788,7 +788,10 @@ html.active .site-footer{
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
+    margin-left: 16%;
+    margin-right: 16%;
   }
+  
 
   html.active .page-content{
     -webkit-transform: matrix(1, 0, 0, 1, 280, 0);
@@ -818,7 +821,91 @@ html.active .site-footer{
   }
 }
 
+@media (max-width: 1000px){ // 폰 메뉴 업데이트: 휴대폰화면일 때 경우 고려하여 코드 작성
+  .page-content {
 
+    // 폰 날개 업데이트 : 메뉴 클릭시 내용있는 부분이 치워짐
+    -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+    -moz-animation: matrix(1, 0, 0, 1, 0, 0);
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    margin-left: 11%;
+    margin-right: 11%;
+  }
+
+  html.active .page-content{
+    -webkit-transform: matrix(1, 0, 0, 1, 280, 0);
+    -moz-transform: matrix(1, 0, 0, 1, 280, 0);
+    transform: matrix(1, 0, 0, 1, 280, 0);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+
+
+  .site-footer {
+    -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+    -moz-animation: matrix(1, 0, 0, 1, 0, 0);
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+
+  html.active .site-footer{
+    -webkit-transform: matrix(1, 0, 0, 1, 280, 0);
+    -moz-transform: matrix(1, 0, 0, 1, 280, 0);
+    transform: matrix(1, 0, 0, 1, 280, 0);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+}
+
+@media (max-width: 800px){ // 폰 메뉴 업데이트: 휴대폰화면일 때 경우 고려하여 코드 작성
+  .page-content {
+
+    // 폰 날개 업데이트 : 메뉴 클릭시 내용있는 부분이 치워짐
+    -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+    -moz-animation: matrix(1, 0, 0, 1, 0, 0);
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  html.active .page-content{
+    -webkit-transform: matrix(1, 0, 0, 1, 280, 0);
+    -moz-transform: matrix(1, 0, 0, 1, 280, 0);
+    transform: matrix(1, 0, 0, 1, 280, 0);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+
+
+  .site-footer {
+    -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+    -moz-animation: matrix(1, 0, 0, 1, 0, 0);
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+
+  html.active .site-footer{
+    -webkit-transform: matrix(1, 0, 0, 1, 280, 0);
+    -moz-transform: matrix(1, 0, 0, 1, 280, 0);
+    transform: matrix(1, 0, 0, 1, 280, 0);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+}
 
 @media (max-width: 600px){ // 폰 메뉴 업데이트: 휴대폰화면일 때 경우 고려하여 코드 작성
   .page-content {
@@ -830,6 +917,8 @@ html.active .site-footer{
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   html.active .page-content{
@@ -878,7 +967,6 @@ html.active .site-footer{
   padding-left: $spacing-unit * .9;
   text-align: center;
 
-
   @media screen and (min-width: $on-large) {
     @include relative-font-size(2.625);
   }
@@ -890,7 +978,7 @@ html.active .site-footer{
 
 .post-content {
   margin-bottom: $spacing-unit;
-
+  
   h1, h2, h3, h4, h5, h6 { margin-top: $spacing-unit }
 
   h2 {
