@@ -257,7 +257,7 @@
     font-size: 3px;
     height: 40px;
     margin-top: 3px;
-    margin-left: 10px;
+
     -webkit-tap-highlight-color: transparent;
     > svg path{
       fill: $border-color-03;
@@ -789,6 +789,15 @@ html.active .site-footer{
     margin-right: 16%;
   }
   
+  #menu{
+    margin-left: 16%;
+    -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+    -moz-animation: matrix(1, 0, 0, 1, 0, 0);
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
 
   html.active .page-content{
     -webkit-transform: matrix(1, 0, 0, 1, 280, 0);
@@ -831,7 +840,15 @@ html.active .site-footer{
     margin-left: 11%;
     margin-right: 11%;
   }
-
+  #menu{
+    margin-left: 11%;
+    -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+    -moz-animation: matrix(1, 0, 0, 1, 0, 0);
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
   html.active .page-content{
     -webkit-transform: matrix(1, 0, 0, 1, 280, 0);
     -moz-transform: matrix(1, 0, 0, 1, 280, 0);
@@ -874,7 +891,15 @@ html.active .site-footer{
     margin-left: 2%;
     margin-right: 2%;
   }
-
+  #menu{
+    margin-left: 2%;
+    -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+    -moz-animation: matrix(1, 0, 0, 1, 0, 0);
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
   html.active .page-content{
     -webkit-transform: matrix(1, 0, 0, 1, 280, 0);
     -moz-transform: matrix(1, 0, 0, 1, 280, 0);
@@ -917,7 +942,15 @@ html.active .site-footer{
     margin-left: 0;
     margin-right: 0;
   }
-
+  #menu{
+    margin-left: 0;
+    -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+    -moz-animation: matrix(1, 0, 0, 1, 0, 0);
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
   html.active .page-content{
     -webkit-transform: matrix(1, 0, 0, 1, 280, 0);
     -moz-transform: matrix(1, 0, 0, 1, 280, 0);
