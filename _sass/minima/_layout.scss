@@ -882,6 +882,10 @@ html.active .site-footer{
   @media screen and (min-width: $on-large) {
     @include relative-font-size(2.625);
   }
+
+  @media (max-width: 600px){
+    font-size: 32px;
+  }
 }
 
 .post-content {
