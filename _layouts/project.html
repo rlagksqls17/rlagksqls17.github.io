@@ -12,7 +12,7 @@ layout: base
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollSmoother.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/Flip.min.js"></script>
-    
+
   <header class="post-header">
     <h1 class="post-title">{{ page.title | escape }}</h1>
   </header>
@@ -77,7 +77,7 @@ layout: base
 
     function toggleMenu(el) {
         let state = Flip.getState(el.querySelector(".accordion-content"));
-        el.classList.toggle("active");
+        el.classList.toggle("menuon");
         Flip.from(state, {
             duration: 0.5,
             ease: "Circ.easeInOut",
