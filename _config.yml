@@ -22,7 +22,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
 
-paginate: 10
+paginate: 7
 paginate_path: /page/:num/
 
 # Theme-specific settings
