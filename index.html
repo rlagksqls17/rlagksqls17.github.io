@@ -3,13 +3,6 @@ layout: base
 ---
 
 <div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-  
-  {{ content }}
-
-
   {% if site.paginate %}
     {% assign posts = paginator.posts %}
   {% else %}
@@ -42,7 +35,6 @@ layout: base
 
     {% if site.paginate %}
       <div class="pager">
-        1111111111111111111111111
         <ul class="pagination">
         {%- if paginator.previous_page %}
           <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
