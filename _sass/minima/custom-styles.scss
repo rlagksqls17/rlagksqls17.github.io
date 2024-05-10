@@ -123,3 +123,13 @@ height: auto;
   z-index: 40;
   position: fixed;
 }
+
+
+@media (max-width: 1200px){
+  #catemenu1{
+    display: none;
+  }
+  .category-id{
+    display: none;
+  }
+}
