@@ -1,6 +1,8 @@
 ---
 layout: base
 ---
+
+
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
   <svg id="category-menu" viewPort="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg">
     <line x1="1" y1="16" 
@@ -13,6 +15,7 @@ layout: base
           stroke-width="5"/>
   </svg>
   <header class="post-header">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <div class="post-meta">
       Date: {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
@@ -52,4 +55,19 @@ layout: base
         theme="github-dark"
         crossorigin="anonymous"
         async>
+</script>
+
+<script type=text/javascript> 
+  $(document).ready(function(){
+    $("#category-menu").hide(); // 탑 버튼 숨김 	
+    $(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) { // 스크롤 내릴 표시
+          $('#category-menu').fadeIn();
+        }else {
+          $('#category-menu').fadeOut();
+        }
+      });     
+    });
+  });	
 </script>
