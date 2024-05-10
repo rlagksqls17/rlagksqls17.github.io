@@ -96,7 +96,7 @@ height: auto;
 
 #catemenu1{
   -webkit-tap-highlight-color: transparent;
-  margin-left: 28%;
+  margin-left: 27%;
   margin-bottom: 50px;
   width: 40px;
   height: 40px;
@@ -108,3 +108,17 @@ height: auto;
   position: fixed;
 }
 
+.category-id{
+  -webkit-tap-highlight-color: transparent;
+  margin-left: 30%;
+  font-size: 20px;
+  margin-bottom: 50px;
+  height: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 40;
+  position: fixed;
+}

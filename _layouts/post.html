@@ -23,6 +23,7 @@ layout: base
             stroke="white" 
             stroke-width="5"/>
     </svg>
+    <div class="category-id">more</div>
   </div>
   <header class="post-header">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -69,13 +70,13 @@ layout: base
 
 <script type=text/javascript> 
   $(document).ready(function(){
-    $("#catemenu1").hide(); // 탑 버튼 숨김 	
+    $("#category-menu").hide(); // 탑 버튼 숨김 	
     $(function () {
       $(window).scroll(function () {
         if ($(this).scrollTop() > 100) { // 스크롤 내릴 표시
-          $('#catemenu1').fadeIn();
+          $('#category-menu').fadeIn();
         }else {
-          $('#catemenu1').fadeOut();
+          $('#category-menu').fadeOut();
         }
       });     
     });
