@@ -94,9 +94,9 @@ height: auto;
 }
 
 
-#category-menu{
+#catemenu1{
   -webkit-tap-highlight-color: transparent;
-  margin-left: 21%;
+  margin-left: 28%;
   margin-bottom: 50px;
   width: 40px;
   height: 40px;
@@ -108,17 +108,3 @@ height: auto;
   position: fixed;
 }
 
-
-.category-id{
-  -webkit-tap-highlight-color: transparent;
-  margin-left: 19.5%;
-  margin-bottom: 32px;
-  cursor: pointer;
-  font-size: 17px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: 40;
-  position: fixed;
-  color: black;
-}
