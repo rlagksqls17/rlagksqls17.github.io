@@ -110,11 +110,8 @@ height: auto;
 }
 
 #category-menu:hover{
-  -webkit-transform: scale(1.10);
-  -moz-transform: scale(1.10);
-  -ms-transform: scale(1.10);
-  -o-transform: scale(1.10);
-  transform: scale(1.10);
+  transition: 0.5s;
+  margin-left: 26.7%;
 }
 
 @media (max-width: 1200px){
