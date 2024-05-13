@@ -126,13 +126,13 @@ height: auto;
 // 더보기 메뉴 업데이트 
 #more-box {
   // background-color: green; // #292C36;
-  background-color: white;
+  background-color: black;
   height: 100%;
   left: -25%;
   z-index: 100;
   top: 0;
   position: fixed;
-  width: 25%;
+  width: 24.9%;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
@@ -171,7 +171,7 @@ height: auto;
   left: 0;
   bottom: 0;
   z-index: 80;
-  color: black;
+  color: white;
   position: fixed;
   font-weight: bold;
   font-size:45px;
@@ -197,8 +197,6 @@ height: auto;
   transition: all .3s ease-in-out;
   z-index: 60;
 }
-
-
 
 @media (max-width: 1200px){
   #more-box{
