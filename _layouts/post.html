@@ -4,7 +4,8 @@ layout: base
 
 
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-  <div id="category-menu">
+    
+  <div id="category-menu" class="category-before">
     <!--svg id="catemenu1" viewPort="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg">
       <line x1="1" y1="16" 
             x2="15" y2="1" 
@@ -23,7 +24,13 @@ layout: base
             stroke="#848484" 
             stroke-width="5"/>
     </svg-->
-    &#9665; more
+    &#10095;&#10095;
+  </div>
+  <div id="more-box">
+    hi
+    <div id="close-category">
+      &#10094;&#10094;	
+    </div>
   </div>
   <header class="post-header">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -81,4 +88,33 @@ layout: base
       });     
     });
   });	
+</script>
+
+<script type=text/javascript>
+  $(function(){
+    $("#category-menu").mouseover(function(){
+      $('#more-box').addClass('more');
+    })
+    $("#category-menu").mouseleave(function(){
+      $('#more-box').removeClass('more');
+    })
+    $('#category-menu').click(function(){
+      $('#more-box').removeClass('more');
+      $('#more-box').addClass('expand-box');
+
+      $('#close-category').addClass('close-category');
+    })
+    $('#close-category').click(function(){
+      $('#more-box').removeClass('close-box');
+      $('#more-box').removeClass('expand-box');
+      $('#close-category').removeClass('close-category');
+      $('#category-menu').addClass('category-before'); 
+    })
+    $("#close-category").mouseover(function(){
+      $('#more-box').addClass('close-box');
+    })
+    $("#close-category").mouseleave(function(){
+      $('#more-box').removeClass('close-box');
+    })
+  })
 </script>

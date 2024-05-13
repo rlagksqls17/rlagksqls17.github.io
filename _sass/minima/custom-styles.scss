@@ -94,30 +94,114 @@ height: auto;
 }
 
 
-#category-menu{
+.category-before{
   -webkit-tap-highlight-color: transparent;
-  margin-left: 16%;
-  margin-bottom: 35px;
-  height: 25px;
+  margin-left: 19%;
+  margin-bottom: 45px;
+  height: 50px;
   cursor: pointer;
   position: absolute;
   left: 0;
   bottom: 0;
   z-index: 40;
+
   color: black;
   position: fixed;
   font-weight: bold;
-  font-size:25px;
+  font-size:45px;
 }
 
-#category-menu:hover{
+.category-before:hover{
   transition: 0.5s;
-  margin-left: 15%;
+  margin-left: 19.5%;
 }
 
 @media (max-width: 1200px){
   #catemenu1{
     display: none;
   }
+}
 
+
+// 더보기 메뉴 업데이트 
+#more-box {
+  // background-color: green; // #292C36;
+  background-color: white;
+  height: 100%;
+  left: -25%;
+  z-index: 100;
+  top: 0;
+  position: fixed;
+  width: 25%;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.more{
+  -webkit-transform: matrix(1, 0, 0, 1, 30, 0);
+  -moz-transform: matrix(1, 0, 0, 1, 30, 0);
+  transform: matrix(1, 0, 0, 1, 30, 0);
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.expand-menu{
+  opacity: 0;
+}
+
+.expand-box{
+  background-color: grey;
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  z-index: 60;
+}
+
+.close-category{
+  -webkit-tap-highlight-color: transparent;
+  margin-left: 10%;
+  margin-bottom: 45px;
+  height: 50px;
+  cursor: pointer;
+  left: 0;
+  bottom: 0;
+  z-index: 80;
+  color: black;
+  position: fixed;
+  font-weight: bold;
+  font-size:45px;
+  transition: 0.8s;
+}
+
+#close-category:hover{
+  transition: 0.3s;
+  margin-left: 15%;
+}
+
+.closed-category{
+  display: none;
+}
+
+.close-box{
+  background-color: grey;
+  -webkit-transform: translateX(92%);
+  -moz-transform: translateX(92%);
+  transform: translateX(92%);
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  z-index: 60;
+}
+
+
+
+@media (max-width: 1200px){
+  #more-box{
+    display: none;
+  }
 }
