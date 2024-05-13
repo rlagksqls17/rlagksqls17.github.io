@@ -209,7 +209,7 @@ pre {
   @extend %clearfix;
 
   @media screen and (min-width: $on-large) {
-    max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width: calc(#{$content-width});
   }
   
   @media (max-width: 1200px){ // 메뉴 업데이트: 휴대폰화면일 때 경우 고려하여 코드 작성
