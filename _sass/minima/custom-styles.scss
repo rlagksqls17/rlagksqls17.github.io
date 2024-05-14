@@ -241,7 +241,7 @@ height: auto;
 
 .category-list-box{
   margin-top: 15%;
-  margin-bottom: 10px;
+  margin-bottom: 15%;
   margin-left: 10%;
   margin-right: 10%;
   width: 80%;
@@ -261,4 +261,19 @@ height: auto;
   width: 5px;
   height: 20px;
   background-color: #585858;
+}
+
+// 더보기 메뉴 업데이트 : 아코디언 메뉴 
+.category-title{
+  text-align: left;
+  font-size: 30px;
+}
+
+.category-menu{
+  text-align: left;
+  font-size: 20px;
+}
+
+.category-content{
+  text-align: left;
 }
