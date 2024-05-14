@@ -31,6 +31,11 @@ layout: base
     <div id="close-category">
       &#10094;&#10094;	
     </div>
+    <a href="/profile">
+      <div id="profile-link-icon" href="/profile">
+        &#9982;
+      </div>
+    </a>
   </div>
   <header class="post-header">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -101,14 +106,15 @@ layout: base
     $('#category-menu').click(function(){
       $('#more-box').removeClass('more');
       $('#more-box').addClass('expand-box');
-
       $('#close-category').addClass('close-category');
+      $('#profile-link-icon').addClass('profile-link-icon')
     })
     $('#close-category').click(function(){
       $('#more-box').removeClass('close-box');
       $('#more-box').removeClass('expand-box');
       $('#close-category').removeClass('close-category');
-      $('#category-menu').addClass('category-before'); 
+      $('#category-menu').addClass('category-before');
+      $('#profile-link-icon').removeClass('profile-link-icon') 
     })
     $("#close-category").mouseover(function(){
       $('#more-box').addClass('close-box');

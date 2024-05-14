@@ -114,6 +114,7 @@ height: auto;
 .category-before:hover{
   transition: 0.5s;
   margin-left: 19.5%;
+  font-size: 50px;
 }
 
 @media (max-width: 1200px){
@@ -181,10 +182,28 @@ height: auto;
 #close-category:hover{
   transition: 0.3s;
   margin-left: 18%;
+  font-size: 50px;
 }
 
-.closed-category{
-  display: none;
+.profile-link-icon{
+  -webkit-tap-highlight-color: transparent;
+  margin-left: 75%;
+  margin-bottom: 45px;
+  height: 50px;
+  cursor: pointer;
+  left: 0;
+  bottom: 0;
+  z-index: 80;
+  color: white;
+  position: fixed;
+  font-weight: bold;
+  font-size:45px;
+  transition: 0.8s;
+}
+
+#profile-link-icon:hover{
+  transition: 0.3s;
+  font-size: 50px;
 }
 
 .close-box{
