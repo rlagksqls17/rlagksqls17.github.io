@@ -360,6 +360,12 @@ height: auto;
   overflow: hidden;
   font-size: 1rem;
   text-align: left;
+  a {
+    color: $link-hover-color;
+  }
+  a:hover{
+    color: white;
+  }
 }
 
 .category-content.expanded {
