@@ -2,7 +2,7 @@
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
 :root {
     --accordion-menu-fs: 1.2rem;
-    --accordion-icon-width: 20px;
+    --accordion-icon-width: 15px;
     --accordion-icon-weight: 2px;
   }
 
@@ -30,7 +30,7 @@ margin: 0;
   }
 
 .accordion-menu {
-    font-size: var(--accordion-menu-fs);
+    font-size: 1.8rem;
     color: $link-hover-color;
     padding: 2.5vw;
     cursor: pointer;
@@ -48,7 +48,7 @@ margin: 0;
         background: $link-hover-color;
         content: "";
         transition: all 0.3s ease;
-        width: var(--accordion-icon-width);
+        width: 25px;
         rotate: -90deg;
     }
 
@@ -59,7 +59,7 @@ margin: 0;
         background: $link-hover-color;
         content: "";
         transition: all 0.3s ease;
-        width: var(--accordion-icon-width);
+        width: 25px;
     }
 }
 
@@ -283,14 +283,15 @@ height: auto;
   align-items: center;
   position: relative;
   z-index: 0;
-
-  &:before {
+  transition: 0.3s;
+  padding-bottom: 10px;
+ 
+  /*&:before {
       height: var(--accordion-icon-weight);
-      position: absolute;
-      right: 0;
+      position: fixed;
+      right: 5%;
       background: $link-hover-color;
       content: "";
-      margin-left: 60%;
       transition: all 0.3s ease;
       width: var(--accordion-icon-width);
       rotate: -90deg;
@@ -298,18 +299,22 @@ height: auto;
 
   &:after {
       height: var(--accordion-icon-weight);
-      position: absolute;
-      right: 0;
-      margin-left: 60%;
+      position: fixed;
+      right: 5%;
       background: $link-hover-color;
       content: "";
       transition: all 0.3s ease;
       width: var(--accordion-icon-width);
-  }
+  }*/
+}
+
+.category-menu:hover{
+  font-size: 23px;
+  transition: 0.3s;
 }
 
 
-.category-group {
+#category-group {
   &:is(.menuon) {
     .category-menu:before {
       rotate: 0deg;
@@ -329,6 +334,7 @@ height: auto;
 
 .category-content {
   height: 0;
+  margin-left: 10%;
   overflow: hidden;
   font-size: 1rem;
   text-align: left;
@@ -337,8 +343,11 @@ height: auto;
 .category-content.expanded {
   height: 0;
   overflow: hidden;
+  //border-bottom: solid gray 1px;
 }
 
 .menuon .category-content {
   height: auto;
+  background-color: black;
+  //border-bottom: solid gray 1px; 
 }
