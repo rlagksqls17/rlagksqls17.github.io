@@ -31,10 +31,10 @@ layout: base
       <h1 class="category-font">Categories</h1>
     </div>
     <div class="category-list-box">
+      <h1 class="category-title">Project</h1>
       <div class="category-group">
-        <h1 class="category-title">Project</h1>
         <div class="category-menu">
-            - Github blog 리모델링
+            Github blog 리모델링
         </div>
         <div class="category-content">
           <a href="/project/2024/03/20/github1.html">&ensp;&ensp;&ensp;1. 와이어프레임 구축</a>
@@ -49,10 +49,6 @@ layout: base
         </div>
         <br>
         <br>
-        <h1 class="category-title">Note</h1>
-        <div class="category-menu">
-            - 게시글 준비 중입니다.
-        </div>
       </div>
     </div>
     <div id="button-box">
@@ -68,6 +64,11 @@ layout: base
   </div>
   <header class="post-header">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Load TweenMax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <!-- Load ScrollTrigger, ScrollSmoother, Flip plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/Flip.min.js"></script>
+   
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <div class="post-meta">
       Date: {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
@@ -152,4 +153,25 @@ layout: base
       $('#more-box').removeClass('close-box');
     })
   })
+</script>
+
+<script>
+  // Accordion 
+  const groups = gsap.utils.toArray(".category-group");
+
+  groups.forEach((el) => {
+      el.addEventListener("click", () => toggleMenu(el));
+  });
+
+  function toggleMenu(el) {
+      let state = Flip.getState(el.querySelector(".category-content"));
+      el.classList.toggle("menuon");
+      Flip.from(state, {
+          duration: 0.5,
+          ease: "Circ.easeInOut",
+          onComplete: () => ScrollTrigger.refresh()
+      });
+  }
+
+  ScrollTrigger.addEventListener("refresh", () => console.log("refresh"));
 </script>

@@ -1,8 +1,8 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
 :root {
-    --accordion-menu-fs: 1.8rem;
-    --accordion-icon-width: 24px;
+    --accordion-menu-fs: 1.2rem;
+    --accordion-icon-width: 20px;
     --accordion-icon-weight: 2px;
   }
 
@@ -68,8 +68,8 @@ margin: 0;
     overflow: hidden;
     font-size: 1rem;
 }
-  
-  .accordion-content.expanded {
+
+.accordion-content.expanded {
     height: 0;
     overflow: hidden;
 }
@@ -263,17 +263,82 @@ height: auto;
   background-color: #585858;
 }
 
+
+
 // 더보기 메뉴 업데이트 : 아코디언 메뉴 
 .category-title{
   text-align: left;
   font-size: 30px;
 }
 
-.category-menu{
+.category-menu {
   text-align: left;
   font-size: 20px;
+  color: $link-hover-color;
+  margin-left: 10%;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+
+  &:before {
+      height: var(--accordion-icon-weight);
+      position: absolute;
+      right: 0;
+      background: $link-hover-color;
+      content: "";
+      margin-left: 60%;
+      transition: all 0.3s ease;
+      width: var(--accordion-icon-width);
+      rotate: -90deg;
+  }
+
+  &:after {
+      height: var(--accordion-icon-weight);
+      position: absolute;
+      right: 0;
+      margin-left: 60%;
+      background: $link-hover-color;
+      content: "";
+      transition: all 0.3s ease;
+      width: var(--accordion-icon-width);
+  }
 }
 
-.category-content{
+
+.category-group {
+  &:is(.menuon) {
+    .category-menu:before {
+      rotate: 0deg;
+    }
+  }
+
+  &:nth-child(1) {
+    background: black;
+  }
+  &:nth-child(2) {
+    background: black;
+  }
+  &:nth-child(3) {
+    background: black;
+  }
+}
+
+.category-content {
+  height: 0;
+  overflow: hidden;
+  font-size: 1rem;
   text-align: left;
+}
+
+.category-content.expanded {
+  height: 0;
+  overflow: hidden;
+}
+
+.menuon .category-content {
+  height: auto;
 }
