@@ -55,6 +55,11 @@ layout: base
       <div id="close-category">
         &#10094;&#10094;	
       </div>
+      <a href="/">
+        <div id="home-link-icon" href="/">
+          &#x2302;
+        </div>
+      </a>      
       <a href="/profile">
         <div id="profile-link-icon" href="/profile">
           &#9982;
@@ -137,14 +142,16 @@ layout: base
       $('#more-box').removeClass('more');
       $('#more-box').addClass('expand-box');
       $('#close-category').addClass('close-category');
-      $('#profile-link-icon').addClass('profile-link-icon')
+      $('#profile-link-icon').addClass('profile-link-icon');
+      $('#home-link-icon').addClass('home-link-icon');
     })
     $('#close-category').click(function(){
       $('#more-box').removeClass('close-box');
       $('#more-box').removeClass('expand-box');
       $('#close-category').removeClass('close-category');
       $('#category-menu').addClass('category-before');
-      $('#profile-link-icon').removeClass('profile-link-icon') 
+      $('#profile-link-icon').removeClass('profile-link-icon');
+      $('#home-link-icon').removeClass('home-link-icon'); 
     })
     $("#close-category").mouseover(function(){
       $('#more-box').addClass('close-box');
