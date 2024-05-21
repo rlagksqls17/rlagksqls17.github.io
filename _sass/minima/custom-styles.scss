@@ -398,6 +398,7 @@ height: auto;
 
   .content .subheading, 
   .content .paragraph {
+    color: #D8D8D8;
     opacity: 1; 
     opacity: calc( 1 + var(--viewport-y) );
   }
@@ -450,6 +451,7 @@ height: auto;
     grid-row: 2 / 3;
     line-height: 1.5;
   }
+
 } 
 
 .heading {
