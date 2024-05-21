@@ -119,24 +119,10 @@ layout: base
           <h2 class="heading">Programming + Biology<br /></h2>
         </header>
         <p class="paragraph">
-          <br />python (pandas)
-          <br/> linux
-          <br/> R
-          <br/> html
-          <br/> javascript
-          <br/> css
-          <br/> react
-          <br/> Microbiome (WGS data analysis, Taxon & gene identification)
-          <br/> Alignment (BLAST, bowtie2, KMA)
-          <br/> Github
-          <br/> Computational Antibody Design
-          <br/> AI 프로젝트 경험
-          <br/> in vivo 연구 수행 경험 (PCR, cloning, transformation)
-          <br/> 생물학 기초 지식
-          <br/> 논문 작성 및 제출, 리서치 경험
-          <br/> 3학기에 걸친 python 강의 경험  
-          <br/>
-          <br/>
+          <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+          <script src="https://cdn.amcharts.com/lib/5/hierarchy.js"></script>
+          <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+          <div id="chartdiv"></div>
         </p>
       </div>
     </section>
@@ -245,4 +231,173 @@ layout: base
   });
 
   Splitting({ target: '.heading' });
+</script>
+
+<script>
+  /**
+   * ---------------------------------------
+   * This demo was created using amCharts 5.
+   * 
+   * For more information visit:
+   * https://www.amcharts.com/
+   * 
+   * Documentation is available at:
+   * https://www.amcharts.com/docs/v5/
+   * ---------------------------------------
+   */
+
+  /**
+   * This chart is inspired by:
+   * https://coffee-mind.com/product/coffeemind-aroma-wheel/
+   */
+
+  // Create root element
+  // https://www.amcharts.com/docs/v5/getting-started/#Root_element
+  var root = am5.Root.new("chartdiv");
+
+
+  // Set themes
+  // https://www.amcharts.com/docs/v5/concepts/themes/
+  root.setThemes([
+    am5themes_Animated.new(root)
+  ]);
+
+
+  // Create wrapper container
+  var container = root.container.children.push(am5.Container.new(root, {
+    width: am5.percent(100),
+    height: am5.percent(100),
+    //layout: root.verticalLayout
+  }));
+
+  // Add title
+  var title = container.children.push(am5.Label.new(root, {
+    text: "Transformers",
+    textAlign: "center",
+    x: am5.p50,
+    y: am5.p50,
+    centerX: am5.p50,
+    centerY: am5.p50,
+    fontSize: 12,
+    fontWeight: "500",
+    fill: am5.color(0x385d63)
+  }));
+
+  var credits = container.children.push(am5.Label.new(root, {
+    text: "Inspired by\n[bold]CoffeeMind",
+    x: am5.p100,
+    y: am5.p100,
+    centerX: am5.p100,
+    centerY: am5.p100,
+    fontSize: 15,
+    fill: am5.color(0x385d63),
+    cursorOverStyle: "pointer",
+    background: am5.Rectangle.new(root, {
+      fill: am5.color(0x000000),
+      fillOpacity: 0
+    })
+  }));
+
+  credits.events.on("click", function() {
+    window.open("https://coffee-mind.com/product/coffeemind-aroma-wheel/");
+  });
+
+
+  // Create series
+  // https://www.amcharts.com/docs/v5/charts/hierarchy/#Adding
+  var series = container.children.push(am5hierarchy.Sunburst.new(root, {
+    singleBranchOnly: true,
+    downDepth: 2,
+    initialDepth: 2,
+    topDepth: 1,
+    innerRadius: 50,
+    valueField: "value",
+    categoryField: "name",
+    childDataField: "children"
+  }));
+
+  series.nodes.template.setAll({
+    tooltipText: "{category}"
+  });
+
+  series.slices.template.setAll({
+    templateField: "nodeSettings"
+  });
+
+  series.labels.template.setAll({
+    paddingLeft: 10,
+    paddingRight: 10,
+    paddingTop: 5,
+    paddingBottom: 5,
+    baseRadius: am5.p100,
+    centerX: am5.p100,
+    textAlign: "start"
+  });
+
+
+  // Set data
+  // https://www.amcharts.com/docs/v5/charts/hierarchy/#Setting_data
+  var data = [{
+    name: "COFFEE",
+    nodeSettings: { fill: am5.color(0xaaaaaa) },
+    children: [{
+      name: "2D",
+      nodeSettings: { fill: am5.color(0x355070) },
+      children: [
+        { name: "Hybrid", nodeSettings: { fill: am5.color(0xB56576) },
+        children: [{
+          name: "Vanilla", 
+            nodeSettings: { fill: am5.color(0xE88C7D) }, value: 1
+        },
+              {
+          name: "Non-Vanilla", 
+            nodeSettings: { fill: am5.color(0xEAAC8B) }, value: 1
+        },     ],
+        },
+        { name: "Pure", nodeSettings: { fill: am5.color(0xE56B6F) },
+          children: [{
+          name: "Vanilla", 
+            nodeSettings: { fill: am5.color(0xE88C7D) }, value: 1
+        },
+              {
+          name: "Non-Vanilla", 
+            nodeSettings: { fill: am5.color(0xEAAC8B) }, value: 1
+        },     ]    
+          },
+      ]
+    },
+              {
+      name: "3D",
+      nodeSettings: { fill: am5.color(0x6D597A) },
+      children: [
+        { name: "Hybrid", nodeSettings: { fill: am5.color(0xB56576) },
+        children: [{
+          name: "Vanilla", 
+            nodeSettings: { fill: am5.color(0xE88C7D) }, value: 1
+        },
+              {
+          name: "Non-Vanilla", 
+            nodeSettings: { fill: am5.color(0xEAAC8B) }, value: 1
+        },     ],
+          },
+        { name: "Pure", nodeSettings: { fill: am5.color(0xE56B6F) },
+          children: [{
+          name: "Vanilla", 
+            nodeSettings: { fill: am5.color(0xE88C7D) }, value: 1
+        },
+              {
+          name: "Non-Vanilla", 
+            nodeSettings: { fill: am5.color(0xEAAC8B) }, value: 1
+        },     ]
+        
+        },
+      ],
+    }]
+  }];
+
+  series.data.setAll(data);
+  series.set("selectedDataItem", series.dataItems[0]);
+
+  // Make stuff animate on load
+  series.appear(1000, 100);
 </script>
