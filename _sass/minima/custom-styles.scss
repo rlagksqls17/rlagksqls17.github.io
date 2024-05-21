@@ -104,7 +104,7 @@ height: auto;
   left: 0;
   bottom: 0;
   z-index: 40;
-
+  
   color: black;
   position: fixed;
   font-weight: bold;
@@ -117,12 +117,15 @@ height: auto;
   font-size: 50px;
 }
 
+
 @media (max-width: 1200px){
   #catemenu1{
     display: none;
   }
+  .not-phone-menu{
+    display: none;
+  }
 }
-
 
 // 더보기 메뉴 업데이트 
 #more-box {
