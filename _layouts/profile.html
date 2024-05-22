@@ -87,7 +87,8 @@ layout: base
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <!-- Load ScrollTrigger, ScrollSmoother, Flip plugins -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/Flip.min.js"></script>
-    
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+        
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     
       
@@ -108,10 +109,24 @@ layout: base
           안녕하세요. 저는 현재 생물정보학 분야를 주로 공부하고 있고, 코딩 및 데이터분석을 활용한 연구를 좋아하며, 특히 "연구의 목적에 맞는 솔직하고 깊은 데이터 분석"에 관심이 많습니다.   
           <br/>
           <br/>
-
         </p>
       </div>
     </section>
+    <section class="content-section" data-scroll>
+      <figure class="figure"><img src="{{ 'assets/profile3.jpg' | relative_url }}" /></figure>
+      <div class="content">
+        <header class="header">
+          <div class="subheading">My skill</div>
+        </header>
+        <p class="paragraph">
+          <script src="//cdn.amcharts.com/lib/5/index.js"></script>
+          <script src="//cdn.amcharts.com/lib/5/hierarchy.js"></script>
+          <script src="//cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+          <div id="chartdiv"></div>
+        </p>
+      </div>
+    </section>
+
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
@@ -223,167 +238,217 @@ layout: base
   /**
    * ---------------------------------------
    * This demo was created using amCharts 5.
-   * 
+   *
    * For more information visit:
    * https://www.amcharts.com/
-   * 
+   *
    * Documentation is available at:
    * https://www.amcharts.com/docs/v5/
    * ---------------------------------------
    */
 
-  /**
-   * This chart is inspired by:
-   * https://coffee-mind.com/product/coffeemind-aroma-wheel/
-   */
-
-  // Create root element
-  // https://www.amcharts.com/docs/v5/getting-started/#Root_element
+  // Create root and chart
   var root = am5.Root.new("chartdiv");
 
-
-  // Set themes
-  // https://www.amcharts.com/docs/v5/concepts/themes/
   root.setThemes([
     am5themes_Animated.new(root)
   ]);
 
-
-  // Create wrapper container
-  var container = root.container.children.push(am5.Container.new(root, {
-    width: am5.percent(100),
-    height: am5.percent(100),
-    //layout: root.verticalLayout
-  }));
-
-  // Add title
-  var title = container.children.push(am5.Label.new(root, {
-    text: "Transformers",
-    textAlign: "center",
-    x: am5.p50,
-    y: am5.p50,
-    centerX: am5.p50,
-    centerY: am5.p50,
-    fontSize: 35,
-    fontWeight: "500",
-    fill: am5.color(0x385d63)
-  }));
-
-  var credits = container.children.push(am5.Label.new(root, {
-    text: "Inspired by\n[bold]CoffeeMind",
-    x: am5.p100,
-    y: am5.p100,
-    centerX: am5.p100,
-    centerY: am5.p100,
-    fontSize: 35,
-    fill: am5.color(0x385d63),
-    cursorOverStyle: "pointer",
-    background: am5.Rectangle.new(root, {
-      fill: am5.color(0x000000),
-      fillOpacity: 0
+  var container = root.container.children.push(
+    am5.Container.new(root, {
+      width: am5.percent(100),
+      height: am5.percent(100),
+      layout: root.verticalLayout
     })
-  }));
+  );
 
-  credits.events.on("click", function() {
-    window.open("https://coffee-mind.com/product/coffeemind-aroma-wheel/");
-  });
+  var series = container.children.push(
+    am5hierarchy.Sunburst.new(root, {
+      downDepth: 1,
+      initialDepth: 1,
+      valueField: "value",
+      categoryField: "name",
+      childDataField: "children"
+    })
+  );
 
-
-  // Create series
-  // https://www.amcharts.com/docs/v5/charts/hierarchy/#Adding
-  var series = container.children.push(am5hierarchy.Sunburst.new(root, {
-    singleBranchOnly: true,
-    downDepth: 2,
-    initialDepth: 2,
-    topDepth: 1,
-    innerRadius: 50,
-    valueField: "value",
-    categoryField: "name",
-    childDataField: "children"
-  }));
-
-  series.nodes.template.setAll({
-    tooltipText: "{category}"
-  });
-
-  series.slices.template.setAll({
-    templateField: "nodeSettings"
-  });
-
-  series.labels.template.setAll({
-    paddingLeft: 10,
-    paddingRight: 10,
-    paddingTop: 5,
-    paddingBottom: 5,
-    baseRadius: am5.p100,
-    centerX: am5.p100,
-    textAlign: "start"
-  });
-
-
-  // Set data
-  // https://www.amcharts.com/docs/v5/charts/hierarchy/#Setting_data
-  var data = [{
-    name: "COFFEE",
-    nodeSettings: { fill: am5.color(0xaaaaaa) },
+  series.data.setAll([{
+    name: "Root",
     children: [{
-      name: "2D",
-      nodeSettings: { fill: am5.color(0x355070) },
-      children: [
-        { name: "Hybrid", nodeSettings: { fill: am5.color(0xB56576) },
+      name: "A0",
+      children: [{
+        name: "A0A1",
         children: [{
-          name: "Vanilla", 
-            nodeSettings: { fill: am5.color(0xE88C7D) }, value: 1
-        },
-              {
-          name: "Non-Vanilla", 
-            nodeSettings: { fill: am5.color(0xEAAC8B) }, value: 1
-        },     ],
-        },
-        { name: "Pure", nodeSettings: { fill: am5.color(0xE56B6F) },
+          name: "A0A0A2",
+          value: 71
+        }, {
+          name: "A0A0B2",
           children: [{
-          name: "Vanilla", 
-            nodeSettings: { fill: am5.color(0xE88C7D) }, value: 1
-        },
-              {
-          name: "Non-Vanilla", 
-            nodeSettings: { fill: am5.color(0xEAAC8B) }, value: 1
-        },     ]    
-          },
-      ]
-    },
-              {
-      name: "3D",
-      nodeSettings: { fill: am5.color(0x6D597A) },
-      children: [
-        { name: "Hybrid", nodeSettings: { fill: am5.color(0xB56576) },
+            name: "A0A0B1A3",
+            value: 69
+          }, {
+            name: "A0A0B1B3",
+            value: 85
+          }]
+        }, {
+          name: "A0A0C2",
+          value: 48
+        }]
+      }, {
+        name: "A0B1",
+        value: 27
+      }, {
+        name: "A0C1",
         children: [{
-          name: "Vanilla", 
-            nodeSettings: { fill: am5.color(0xE88C7D) }, value: 1
-        },
-              {
-          name: "Non-Vanilla", 
-            nodeSettings: { fill: am5.color(0xEAAC8B) }, value: 1
-        },     ],
-          },
-        { name: "Pure", nodeSettings: { fill: am5.color(0xE56B6F) },
+          name: "A0C2A2",
+          value: 2
+        }, {
+          name: "A0C2B2",
           children: [{
-          name: "Vanilla", 
-            nodeSettings: { fill: am5.color(0xE88C7D) }, value: 1
-        },
-              {
-          name: "Non-Vanilla", 
-            nodeSettings: { fill: am5.color(0xEAAC8B) }, value: 1
-        },     ]
-        
-        },
-      ],
+            name: "A0C2B1A3",
+            value: 54
+          }, {
+            name: "A0C2B1B3",
+            value: 16
+          }]
+        }]
+      }, {
+        name: "A0D1",
+        value: 89
+      }]
+    }, {
+      name: "B0",
+      children: [{
+        name: "B1A1",
+        value: 9
+      }, {
+        name: "B1B1",
+        children: [{
+          name: "B1B1A2",
+          children: [{
+            name: "B1B1A0A3",
+            value: 35
+          }, {
+            name: "B1B1A0B3",
+            value: 40
+          }]
+        }, {
+          name: "B1B1B2",
+          value: 55
+        }]
+      }]
+    }, {
+      name: "C0",
+      children: [{
+        name: "C2A1",
+        children: [{
+          name: "C2A0A2",
+          value: 24
+        }, {
+          name: "C2A0B2",
+          value: 89
+        }, {
+          name: "C2A0C2",
+          children: [{
+            name: "C2A0C2A3",
+            children: [{
+              name: "C2A0C2A0A4",
+              children: [{
+                name: "C2A0C2A0A00",
+                value: 90
+              }, {
+                name: "C2A0C2A0A01",
+                value: 70
+              }, {
+                name: "C2A0C2A0A02",
+                value: 66
+              }, {
+                name: "C2A0C2A0A03",
+                value: 58
+              }]
+            }, {
+              name: "C2A0C2A0B4",
+              children: [{
+                name: "C2A0C2A0B10",
+                value: 80
+              }, {
+                name: "C2A0C2A0B11",
+                value: 40
+              }]
+            }]
+          }, {
+            name: "C2A0C2B3",
+            value: 44
+          }]
+        }, {
+          name: "C2A0D2",
+          children: [{
+            name: "C2A0D3A3",
+            value: 28
+          }, {
+            name: "C2A0D3B3",
+            value: 14
+          }]
+        }]
+      }, {
+        name: "C2B1",
+        value: 40
+      }, {
+        name: "C2C1",
+        children: [{
+          name: "C2C2A2",
+          children: [{
+            name: "C2C2A0A3",
+            value: 28
+          }, {
+            name: "C2C2A0B3",
+            children: [{
+              name: "C2C2A0B1A4",
+              value: 19
+            }, {
+              name: "C2C2A0B1B4",
+              children: [{
+                name: "C2C2A0B1B10",
+                value: 11
+              }, {
+                name: "C2C2A0B1B11",
+                value: 10
+              }, {
+                name: "C2C2A0B1B12",
+                value: 97
+              }, {
+                name: "C2C2A0B1B13",
+                value: 47
+              }]
+            }, {
+              name: "C2C2A0B1C4",
+              children: [{
+                name: "C2C2A0B1C20",
+                value: 40
+              }, {
+                name: "C2C2A0B1C21",
+                value: 37
+              }, {
+                name: "C2C2A0B1C22",
+                value: 53
+              }]
+            }]
+          }, {
+            name: "C2C2A0C3",
+            value: 96
+          }]
+        }, {
+          name: "C2C2B2",
+          value: 66
+        }]
+      }]
     }]
-  }];
-
-  series.data.setAll(data);
+  }]);
   series.set("selectedDataItem", series.dataItems[0]);
 
-  // Make stuff animate on load
-  series.appear(1000, 100);
+  container.children.unshift(
+    am5hierarchy.BreadcrumbBar.new(root, {
+      series: series
+    })
+  );
 </script>
