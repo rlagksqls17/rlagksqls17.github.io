@@ -403,7 +403,7 @@ height: auto;
   .content .paragraph {
     color: #D8D8D8;
     opacity: 1; 
-    opacity: calc( 1.5 + var(--viewport-y) );
+    opacity: calc( 1.9 + var(--viewport-y) );
   }
  
 }
