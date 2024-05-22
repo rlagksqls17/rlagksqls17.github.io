@@ -403,7 +403,7 @@ height: auto;
   .content .paragraph {
     color: #D8D8D8;
     opacity: 1; 
-    opacity: calc( 1.2 + var(--viewport-y) );
+    opacity: calc( 1.5 + var(--viewport-y) );
   }
  
 }
@@ -523,5 +523,5 @@ height: auto;
 
 #chartdiv {
   width: 80%;
-  height: 400px;
+  height: 80%;
 }
