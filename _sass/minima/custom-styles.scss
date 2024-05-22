@@ -526,5 +526,9 @@ height: auto;
   margin-right: 10%;
   width: 80%;
   height: 80%;
-  --webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
