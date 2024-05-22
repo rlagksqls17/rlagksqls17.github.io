@@ -272,19 +272,37 @@ layout: base
   );
 
   series.data.setAll([{
-    name: "bioinfo.",
+    name: "skills",
     children: [{
       name: "coding",
-      value: 50
+      value: 65,
+      children: [{
+        name: "test1",
+        value: 10
+      }]
     }, {
-      name: "studied",
-      value: 40
-    }, {
-      name: "statistics\n& AI",
-      value: 10
-    }]
+      name: "bioinfo.",
+      value: 50,
+      children: [{
+        name: "test2",
+        value: 10
+      }]
+      }, {
+      name: "statistics \n& AI",
+      value: 35,
+      children: [{
+        name: "test3",
+        value: 10
+      }]
+      }]
   }]);
   series.set("selectedDataItem", series.dataItems[0]);
+
+  series.slices.template.setAll({
+  fillOpacity: 0.5,
+  stroke: am5.color(0xffffff),
+  strokeWidth: 2
+});
 
   container.children.unshift(
     am5hierarchy.BreadcrumbBar.new(root, {
