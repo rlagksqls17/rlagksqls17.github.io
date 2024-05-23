@@ -275,7 +275,7 @@ layout: base
   var colorSet = am5.ColorSet.new(root, {
     colors: [
       am5.color(0x000000), // Color for the first level
-      am5.color(0x424242),
+      am5.color(0x04B404),
       am5.color(0x0174DF),
       am5.color(0xDF7401)
     ]
@@ -289,16 +289,56 @@ layout: base
       name: "bioinfo.",
       children: [{
         name: "microbiome\n(WGS)",
-        value: 20
+        // value: 20
+        children: [{
+          name: "전처리\n및 EDA",
+          value: 4
+        }, {
+          name: "유전자\n식별",
+          value: 4
+        }, {
+          name: "분류군\n식별",
+          value: 4
+        }, {
+          name: "assembly",
+          value: 3
+        }]
       }, {
-        name: "in vivo\n실험 경험",
-        value: 2
+        name: "in vivo\n실험",
+        children: [{
+          name: "PCR",
+          value: 1
+        }, {
+          name: "cloning",
+          value: 1
+        }]
       }, {
-        name: "Computational\nAntibody\nDesign",
-        value: 5
+        name: "Rosetta",
+        children: [{
+          name: "항원-항체\n결합 모델링",
+          value: 2
+        }, {
+          name: "항체 디자인",
+          value: 2
+        }]
       }, {
         name: "논문 작성\n&연구",
-        value: 8
+        children: [{
+          name: "sci. rep.\n(리뷰 중)",
+          value: 1
+        }, {
+          name: "신경학",
+          value: 0.5
+        }, {
+          name: "면역학",
+          value: 0.5
+        }, {
+          name: "미생물학",
+          value: 1.5
+        }]
+      }, {
+        name: "BLAST",
+        value: 5
       }]
       }, {
       name: "통계\n& AI",
@@ -347,7 +387,7 @@ layout: base
         name: "react",
         value: 0.4
       }, {
-        name: "project",
+        name: "team\nproject",
         value: 2.2
       }]
     }, {
