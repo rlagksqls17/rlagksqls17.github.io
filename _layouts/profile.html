@@ -271,6 +271,18 @@ layout: base
     })
   );
 
+  // Define color set
+  var colorSet = am5.ColorSet.new(root, {
+    colors: [
+      am5.color(0x000000), // Color for the first level
+      am5.color(0x424242),
+      am5.color(0x0174DF),
+      am5.color(0xFF8000)
+    ]
+  });
+
+  series.set("colors", colorSet);
+
   series.data.setAll([{
     name: "skills",
     children: [{
@@ -318,9 +330,8 @@ layout: base
   }]
   }]);
   series.set("selectedDataItem", series.dataItems[0]);
-
+  
   series.slices.template.setAll({
-
   stroke: am5.color(0xffffff),
   strokeWidth: 2
 });
