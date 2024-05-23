@@ -274,24 +274,6 @@ layout: base
   series.data.setAll([{
     name: "skills",
     children: [{
-      name: "coding",
-      children: [{
-        name: "python",
-        value: 20
-      }, {
-        name: "github",
-        value: 4
-      }, {
-        name: "web\ndev.",
-        value: 5
-      }, {
-        name: "linux",
-        value: 8
-      }, {
-        name: "R",
-        value: 8
-      }]
-    }, {
       name: "bioinfo.",
       children: [{
         name: "microbiome\n(WGS)",
@@ -315,7 +297,25 @@ layout: base
         name: "AI\n기초 지식",
         value: 7
       }]
-      }]
+    }, {
+    name: "coding",
+    children: [{
+      name: "python",
+      value: 20
+    }, {
+      name: "github",
+      value: 4
+    }, {
+      name: "web\ndev.",
+      value: 5
+    }, {
+      name: "linux",
+      value: 8
+    }, {
+      name: "R",
+      value: 8
+    }]
+  }]
   }]);
   series.set("selectedDataItem", series.dataItems[0]);
 
