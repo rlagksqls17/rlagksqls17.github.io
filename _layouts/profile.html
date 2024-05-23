@@ -277,7 +277,7 @@ layout: base
       am5.color(0x000000), // Color for the first level
       am5.color(0x424242),
       am5.color(0x0174DF),
-      am5.color(0xFF8000)
+      am5.color(0xDF7401)
     ]
   });
 
@@ -313,16 +313,55 @@ layout: base
     name: "coding",
     children: [{
       name: "python",
-      value: 20
+      children: [{
+        name: "pandas",
+        value : 10
+      }, {
+        name: "전공 강의\n(37회)",
+        value : 10
+      }]
     }, {
       name: "github",
-      value: 4
+      children: [{
+        name: "블로그",
+        value: 2
+      }, {
+        name: "backup",
+        value: 1
+      }, {
+        name: "cowork",
+        value: 1
+      }]
     }, {
       name: "web\ndev.",
-      value: 5
+      children: [{
+        name: "html",
+        value: 0.8
+      }, {
+        name: "js",
+        value: 0.8
+      }, {
+        name: "css",
+        value: 0.8
+      }, {
+        name: "react",
+        value: 0.4
+      }, {
+        name: "프로젝트",
+        value: 2.2
+      }]
     }, {
       name: "linux",
-      value: 8
+      children: [{
+        name: "명령어\n활용",
+        value: 4
+      }, {
+        name: "툴\n설치",
+        value: 2
+      }, {
+        name: "서버\n자원 활용",
+        value: 4
+      }]
     }, {
       name: "R",
       value: 8
