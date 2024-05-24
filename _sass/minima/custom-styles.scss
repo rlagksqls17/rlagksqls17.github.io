@@ -19,18 +19,18 @@ margin: 0;
     }
   
     &:nth-child(1) {
-      background: #222;
+      background: #000000;
     }
     &:nth-child(2) {
-      background: #333;
+      background: #000000;
     }
     &:nth-child(3) {
-      background: #444;
+      background: #000000;
     }
   }
 
 .accordion-menu {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: $link-hover-color;
     padding: 2.5vw;
     cursor: pointer;
@@ -48,7 +48,7 @@ margin: 0;
         background: $link-hover-color;
         content: "";
         transition: all 0.3s ease;
-        width: 25px;
+        width: 15px;
         rotate: -90deg;
     }
 
@@ -59,7 +59,7 @@ margin: 0;
         background: $link-hover-color;
         content: "";
         transition: all 0.3s ease;
-        width: 25px;
+        width: 15px;
     }
 }
 
