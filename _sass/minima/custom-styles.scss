@@ -30,7 +30,7 @@ margin: 0;
   }
 
 .accordion-menu {
-    font-size: 1.6rem;
+    font-size: 2rem;
     color: $link-hover-color;
     padding: 2.5vw;
     cursor: pointer;
@@ -40,27 +40,6 @@ margin: 0;
     align-items: center;
     position: relative;
     z-index: 0;
-
-    &:before {
-        height: var(--accordion-icon-weight);
-        position: absolute;
-        right: 5vw;
-        background: $link-hover-color;
-        content: "";
-        transition: all 0.3s ease;
-        width: 15px;
-        rotate: -90deg;
-    }
-
-    &:after {
-        height: var(--accordion-icon-weight);
-        position: absolute;
-        right: 5vw;
-        background: $link-hover-color;
-        content: "";
-        transition: all 0.3s ease;
-        width: 15px;
-    }
 }
 
 .accordion-content {
@@ -545,5 +524,5 @@ height: auto;
 }
 
 .site-footer-profile {
-  border-top: 1.2px solid white;
+  border-top: 1.2px solid gray;
 }

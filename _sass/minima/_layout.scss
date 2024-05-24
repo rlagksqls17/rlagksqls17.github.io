@@ -825,6 +825,24 @@ html.active .site-footer{
     -moz-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
   }
+
+  .footer-col {
+    -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+    -moz-animation: matrix(1, 0, 0, 1, 0, 0);
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+
+  html.active .footer-col{
+    -webkit-transform: matrix(1, 0, 0, 1, 280, 0);
+    -moz-transform: matrix(1, 0, 0, 1, 280, 0);
+    transform: matrix(1, 0, 0, 1, 280, 0);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
 }
 
 @media (max-width: 1000px){ // 폰 메뉴 업데이트: 휴대폰화면일 때 경우 고려하여 코드 작성
