@@ -501,14 +501,6 @@ height: auto;
 }
 
 
-#chartdiv {
-  margin-left: 10%;
-  margin-right: 10%;
-  width: 80%;
-  height: 80%;
-}
-
-
 * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -525,4 +517,18 @@ height: auto;
 
 .site-footer-profile {
   border-top: 1.2px solid gray;
+}
+
+#chartdiv {
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  height: 100%;
+}
+
+
+.temp-box{
+  width: 100px;
+  z-index: 1;
+  height: 240px;
 }
