@@ -1,5 +1,5 @@
 ---  
-title: "나의 세 번째 프로젝트 - 최종 과정 기록"
+title: "유튜브 댓글 분석 2"
 excerpt: "last_modified_at: 2021-12-17"
 layout: post
 categories:
