@@ -462,6 +462,7 @@ height: auto;
   overflow: hidden;
   will-change: transform;
   transform: scale(var(--scale));
+  
 
   &:before {
     content: '';
@@ -481,6 +482,7 @@ height: auto;
     transform: scale(calc(1 / var(--scale)));
   }
 }
+
 
 /* ---------------------------------- */
 
