@@ -1,5 +1,5 @@
 ---  
-title: "나의 세 번째 프로젝트 - 엘리스 AI 트랙 데모데이를 마치고..."
+title: "나의 세 번째 프로젝트 - 최종 과정 기록"
 excerpt: "last_modified_at: 2021-12-17"
 layout: post
 categories:
@@ -107,3 +107,10 @@ VM을 거의 처음 만져보는 것이라서 해당 라이브러리와 플랫�
 
 다음 글로는 엘리스 수료 후기를 작성해보도록 하겠다.  
 :)  
+
+---
+
+#### 이 프로젝트의 이전 글
+[나의 세 번째 프로젝트 - 중간 과정 기록](https://rlagksqls17.github.io/blog/2021/11/21/eliceproject4.html)
+
+---  

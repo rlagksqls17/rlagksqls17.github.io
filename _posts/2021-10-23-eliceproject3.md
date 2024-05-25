@@ -94,4 +94,14 @@ last_modified_at: 2021-10-23T08:16:00~18:00
 
 이제 3주 후에 머신러닝을 적용한 한 달간의 프로젝트가 남아있는데, 그때까지 자격증을 따기 위한 노력을 해야 되겠다.  
 
-:)
+:)  
+
+---  
+
+#### 이 프로젝트의 이전 글
+[나의 두 번째 프로젝트 - 중간 과정 기록](https://rlagksqls17.github.io/blog/2021/10/10/eliceproject2.html)  
+
+#### 이 프로젝트의 다음 글
+[나의 세 번째 프로젝트 - 중간 과정 기록](https://rlagksqls17.github.io/blog/2021/11/21/eliceproject4.html)
+
+---  
