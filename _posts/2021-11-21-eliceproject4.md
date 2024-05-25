@@ -1,5 +1,5 @@
 ---  
-title: "팀 프로젝트 - 기계학습 개념 정립과 사용할 기술 소개"
+title: "나의 세 번째 프로젝트 - 기계학습 개념 정립과 사용할 기술 소개"
 excerpt: "last_modified_at: 2021-11-21"
 layout: post
 categories:
