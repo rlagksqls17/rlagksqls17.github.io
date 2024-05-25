@@ -111,6 +111,6 @@ VM을 거의 처음 만져보는 것이라서 해당 라이브러리와 플랫�
 ---
 
 #### 이 프로젝트의 이전 글
-[나의 세 번째 프로젝트 - 중간 과정 기록](https://rlagksqls17.github.io/blog/2021/11/21/eliceproject4.html)
+[유튜브 댓글 분석 1](https://rlagksqls17.github.io/blog/2021/11/21/eliceproject4.html)
 
 ---  

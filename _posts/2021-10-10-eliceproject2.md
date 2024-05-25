@@ -1,5 +1,5 @@
 ---  
-title : "나의 두 번째 프로젝트 - 중간 과정 기록"  
+title : "코로나 전/후 배달 기록 분석 1"  
 excerpt : "last_modified_at: 2021-10-10"  
 categories:  
 - Blog  
@@ -200,6 +200,6 @@ last_modified_at: 2021-09-07T08:01:00~03:00
 ---  
 
 #### 이 프로젝트의 다음 글
-[나의 두 번째 프로젝트 - 최종 과정 기록](https://rlagksqls17.github.io/blog/2021/10/23/eliceproject3.html)
+[코로나 전/후 배달 기록 분석 2](https://rlagksqls17.github.io/blog/2021/10/23/eliceproject3.html)
 
 ---  
