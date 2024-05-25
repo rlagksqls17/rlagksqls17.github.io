@@ -69,7 +69,7 @@ SBERT 모델의 방식처럼 자연어 처리 분야에서 사람이 쓰는 자�
 ---  
 
 #### 이 프로젝트의 이전 글
-[나의 세 번째 프로젝트 - 중간 과정 기록](https://rlagksqls17.github.io/blog/2021/11/21/eliceproject4.html)
+[나의 세 번째 프로젝트 - 중간 과정 기록](https://rlagksqls17.github.io/blog/2021/10/23/eliceproject3.html)
 
 #### 이 프로젝트의 다음 글
 [나의 세 번째 프로젝트 - 최종 과정 기록](https://rlagksqls17.github.io/blog/2021/12/17/teamproject3.html)
