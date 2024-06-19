@@ -9,3 +9,7 @@ main:
   - url: /note/
   - title: "profile"
   - url: /profile/
+  - title: "diary"
+  - url: /diary/
+  - title: "crosffit300"
+  - url: /diary/crosffit300

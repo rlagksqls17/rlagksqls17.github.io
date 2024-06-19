@@ -1,11 +1,8 @@
 ---
 layout: post
-title: "[개인 일기] 크로스핏 292일째"
-categories: proejct
-tags: test
-last_modified_at: 2024-05-29T08:00:00~18:00
+title: 5월 29일 - 크로스핏 292일째
+permalink: /diary/crosffit300/
 ---
-
 
 제일 처음 운동을 시작한건 2년이 넘었지만 주 3회 이상 계속해서 운동을 다닌건 작년 8월 11일부터인데, 오늘이 292일차다. 
 
