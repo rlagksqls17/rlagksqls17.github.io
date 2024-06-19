@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "R - Complexheatmap 이용한 시각화"
+title: "[R] Complexheatmap 이용한 시각화"
 categories: proejct
 tags: test
 last_modified_at: 2024-06-13T08:00:00~18:00

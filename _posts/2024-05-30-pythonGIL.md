@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Python - 파이썬의 성능적 한계, GIL"
+title: "[Python] 파이썬의 성능적 한계, GIL"
 categories: proejct
 tags: test
 last_modified_at: 2024-05-30T08:00:00~18:00

@@ -1,5 +1,5 @@
 ---  
-title: "Sub project - Accurate diagnosis of atopic dermatitis by combining transcriptome and microbiota data with supervised machine learning"
+title: "[Sub project] Accurate diagnosis of atopic dermatitis by combining transcriptome and microbiota data with supervised machine learning"
 excerpt: "last_modified_at: 2023-02-14"
 layout: post
 use_math: True
