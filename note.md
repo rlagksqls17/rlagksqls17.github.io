@@ -1,5 +1,5 @@
 ---
 layout: note
-title: Note
+title: Note list
 permalink: /note/
 ---

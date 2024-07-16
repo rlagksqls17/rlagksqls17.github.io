@@ -3,6 +3,14 @@ layout: base
 ---
 
 <article class="post">
+    
+    <!-- Load jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Load TweenMax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <!-- Load ScrollTrigger, ScrollSmoother, Flip plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/Flip.min.js"></script>
+
   <header class="post-header">
     <h1 class="post-title">{{ page.title | escape }}</h1>
   </header>
@@ -15,47 +23,38 @@ layout: base
         <div class="accordion">
             <div class="accordion-group">
                 <div class="accordion-menu">
-                    Note 1
+                    1. Words
                 </div>
                 <div class="accordion-content">
-                    <p>Note 1입니다.<br>
-                    Note 설명입니다.<br>
-                    Note 마무리 설명입니다.</p>
+                    <p><a href="/project/2024/03/20/github1.html">1- 번아웃</a>
+                        
+                    </p>
                 </div>
             </div>
-            <div class="accordion-group">
+            <!--div class="accordion-group">
                 <div class="accordion-menu">
-                    Note 2
+                    Project 2
                 </div>
                 <div class="accordion-content">
-                    <p>Note 2입니다.<br>
-                        Note 설명입니다.<br>
-                        Note 마무리 설명입니다.</p>
+                    <p>Project 2입니다.<br>
+                    Project 설명입니다.<br>
+                    Project 마무리 설명입니다.</p>
                 </div>
-            </div>
-            <div class="accordion-group">
+            </div-->
+            <!--div class="accordion-group">
                 <div class="accordion-menu">
-                    Note 3
+                    Project 3
                 </div>
                 <div class="accordion-content">
-                    <p>Note 3입니다.<br>
-                        Note 설명입니다.<br>
-                    Note 마무리 설명입니다.</p>
+                    <p>Project 3입니다.<br>
+                    Project 설명입니다.<br>
+                    Project 마무리 설명입니다.</p>
                 </div>
-            </div>
+            </div-->
         </div>
     </div>
   </div>
 </article>
-
-<!-- Load jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!-- Load TweenMax -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-<!-- Load ScrollTrigger, ScrollSmoother, Flip plugins -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollSmoother.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/Flip.min.js"></script>
 
 <script>
     // Accordion 
@@ -67,7 +66,7 @@ layout: base
 
     function toggleMenu(el) {
         let state = Flip.getState(el.querySelector(".accordion-content"));
-        el.classList.toggle("active");
+        el.classList.toggle("menuon");
         Flip.from(state, {
             duration: 0.5,
             ease: "Circ.easeInOut",

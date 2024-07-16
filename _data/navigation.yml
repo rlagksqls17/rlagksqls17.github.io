@@ -11,6 +11,8 @@ main:
   - url: /profile/
   - title: "diary"
   - url: /diary/
+  - title: "Note"
+  - url: /note/
   - title: "crosffit300"
   - url: /diary/crosffit300
   - title: "saporo"
