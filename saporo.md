@@ -124,8 +124,6 @@ permalink: /diary/saporo/
 
 ![Imgur](https://imgur.com/fDf0l86.jpg)  
 
-![Imgur](https://imgur.com/1dCZG7T.jpg)  
-
 
 오로시 (일본 음식점에 처음 들어가면 나오는 에피타이저 같은 음식, 따로 요금을 받음)로는 간장에 절인 (?) 참치 같은게 나왔는데 (첫번째 사진 갈색 접시),  
 
