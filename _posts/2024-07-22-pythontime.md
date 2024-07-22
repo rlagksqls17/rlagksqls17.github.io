@@ -14,6 +14,8 @@ last_modified_at: 2024-07-22T08:00:00~18:00
 
 둘째, timeit 모듈을 활용해서 주어진 파일 외부에서도 개별 함수의 수행시간을 확인 가능하다.  
 
+셋째, cProfile 프로파일러를 활용하여 함수별 수행시간 확인 가능하다.  
+
 ---
 
 ## 개요  
@@ -121,4 +123,45 @@ python -m timeit -n 5 -r 5 \
 -n 5, -r 5는 해당 모듈을 5번 테스트한 평균값을 다시 5번 구해, 제일 빠른 값을 출력해준다.  
 
 ---  
+
+## 3. cProfile  
+
+cProfile은 파이썬 표준 라이브러리가 제공하는 세 가지 프로파일러 중 하나로, 이를 사용할 경우 코드 수행 시간이 길어질 수 있지만 그만큼 더 많은 정보를 제공한다.  
+
+아래는 윈도우 Visual studio code에서 수행했을 때의 결과인데, 결과가 좀 복잡해보인다.  
+
+```python
+line 1: PS C:\Users\USER\OneDrive\바탕 화면\code> python3 -m cProfile -s cumulative .\high_perform_julia_set.py
+line 2: Length of x: 1000
+line 3: Total elements: 1000000
+line 4: 33219980
+line 5: @timefn: calculate_z_serial_purepython took 7.9557788372039795 seconds
+line 6: @timefn: calc_pure_python took 8.56427788734436 seconds
+line 7: Function name: calc_pure_python
+line 8: 36222041 function calls (36222040 primitive calls) in 8.561 seconds
+
+   Ordered by: cumulative time
+
+  ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    8.561    8.561 {built-in method builtins.exec}
+        1    0.000    0.000    8.561    8.561 high_perform_julia_set.py:1(<module>)
+      2/1    0.016    0.008    8.559    8.559 high_perform_julia_set.py:9(measure_time)
+        1    0.397    0.397    8.544    8.544 high_perform_julia_set.py:18(calc_pure_python)
+        1    4.927    4.927    7.951    7.951 high_perform_julia_set.py:47(calculate_z_serial_purepython)
+ 34219980    3.021    0.000    3.021    0.000 {built-in method builtins.abs}
+  2002000    0.192    0.000    0.192    0.000 {method 'append' of 'list' objects}
+                    ... 생략 ...
+       12    0.000    0.000    0.000    0.000 {built-in method builtins.setattr}
+```
+
+
+순차적으로 하나하나 기록해보면, 먼저 line 1에서 -s cumulative 옵션은 각 함수에서 소비한 누적 시간순으로 정렬되어 어떤 함수가 더 느린지 쉽게 확인할 수 있다 (책에서 인용).  
+
+line 2 ~ 7번까지는 모두 해당 코드의 결과값이다 (여기서 timefn은 이 글의 첫번째 섹션에서 데코레이터를 활용해 코드를 작성했을 때 포함된 결과값이기 때문에, cProfile의 시간 측정 결과는 아니다.).   
+
+line 8번부터가 진짜 cProfile의 결과다. 파이썬 내 함수가 총 36222041번 호출되었고, 8.561초가 걸렸음을 확인할 수 있다.  
+
+그 아래에 이상한 수치들과 함께 결과들이 나열되어 있는데, 이는 해당 코드 내 각 주요 함수들의 수행시간이다. cumtime 컬럼이 실제 컴퓨터에서 수행된 누적 시간 (맨 아래에서부터 각각의 함수가 실행된 시간을 누적한다.), 그리고 tottime 컬럼이 해당 함수가 실제로 수행되는데 걸린 시간이다 (실제 함수 수행시간 + cProfile이 측정하는데 걸린 시간이니 주의하자). 
+
+ncalls 컬럼의 경우, 전체 코드가 한번 실행될 때 그 함수 혹은 메소드가 호출된 횟수를 뜻한다. 작성된 코드에 따라 ncalls가 달라지니 참조하자. 예를 들어, 이 코드에서는 list.append() 메소드가 2002000번 호출되었고, 걸린 시간은 총 0.192 초이다.  
 
