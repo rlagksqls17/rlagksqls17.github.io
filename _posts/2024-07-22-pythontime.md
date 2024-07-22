@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[Python] 프로파일링하기"
+title: "[Python] 프로파일링하기 (기술 모음)"
 categories: project
 tags: test
-last_modified_at: 2024-07-06T08:00:00~18:00
+last_modified_at: 2024-07-22T08:00:00~18:00
 ---  
 
 
