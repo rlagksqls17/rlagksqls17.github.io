@@ -1,10 +1,9 @@
 ---
 layout: post
-title: "[수필] 번아웃"
-categories: note
-tags: test
-last_modified_at: 2024-07-16T08:00:00~18:00
----  
+title: 수필 - 번아웃
+permalink: /note/burnout
+---
+
 
 
 ## 내용

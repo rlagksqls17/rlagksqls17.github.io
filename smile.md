@@ -1,11 +1,8 @@
 ---
 layout: post
-title: "[수필] 웃음"
-categories: note
-tags: test
-last_modified_at: 2024-07-24T08:00:00~18:00
----  
-
+title: 수필 - 웃음
+permalink: /note/smile
+---
 
 웃긴 개그에 자지러지는 웃음,  
 편안한 장소에 머무르며 짓는 웃음,  

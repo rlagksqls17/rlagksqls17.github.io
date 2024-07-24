@@ -17,3 +17,7 @@ main:
   - url: /diary/crosffit300
   - title: "saporo"
   - url: /diary/saporo
+  - title: "burnout"
+  - url: /note/burnout
+  - title: "smile"
+  - url: /note/smile
