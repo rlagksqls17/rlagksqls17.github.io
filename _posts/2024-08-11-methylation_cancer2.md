@@ -57,4 +57,8 @@ observed CpG 공식: ***(CpG 수)***
 
 ---
 
+![Imgur](https://imgur.com/nfCrfWA.jpg)
+
+---
+
 [이전글: 후성유전학 1. 개요](https://rlagksqls17.github.io/project/2024/08/09/methylation_cancer1.html)
