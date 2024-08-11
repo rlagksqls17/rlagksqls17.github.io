@@ -35,3 +35,5 @@ last_modified_at: 2024-08-09T08:00:00~18:00
 다음 글로 CpG island가 무엇인지, 그리고 DNA 내 CpG island를 판별하는 기준은 무엇인지 적겠다.
 
 ---
+
+[다음글: 후성유전학 2. CpG island](https://rlagksqls17.github.io/project/2024/08/11/methylation_cancer2.html)

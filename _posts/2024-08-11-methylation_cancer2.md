@@ -20,7 +20,7 @@ CpG site에서 메틸화 (methylation)가 대부분 일어나는데, DNA의 발�
 
 ## CpG site  
 
-![Imgur](https://imgur.com/jNf916j,jpg)
+![Imgur](https://imgur.com/jNf916j.jpg)
 
 CpG site, 혹은 CG site는 DNA 염기서열인 사이토신 (cytosine, C)과 구아닌 (guanine, G)이 일관된 방향 (5' -> 3')으로 연이어 존재하는 site를 말한다.  
 
@@ -57,9 +57,9 @@ observed CpG 공식: ***(CpG 수)***
 
 ---
 
-[Imgur](https://imgur.com/undefined.jpg)  
+![Imgur](https://imgur.com/undefined.jpg)  
 
-고양이다.
+고양이다. just cat!
 
 ---
 
