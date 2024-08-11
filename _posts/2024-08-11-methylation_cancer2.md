@@ -57,7 +57,7 @@ observed CpG 공식: ***(CpG 수)***
 
 ---
 
-![Imgur](https://imgur.com/undefined.jpg)  
+![Imgur](https://imgur.com/nfCrfWA.jpg)
 
 고양이다. just cat!
 
