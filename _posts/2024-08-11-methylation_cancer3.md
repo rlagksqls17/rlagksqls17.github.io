@@ -91,6 +91,8 @@ Biological variation을 고려해서, p*id*는 beta distrubution을 따른다고
 
 **즉 Y*id* ~ beta-bin (m*id*, π*id*, ψ*i* )**  
 
+다음글에 계속...
+
 ---  
 
 [이전글: 후성유전학 2. CpG island](https://rlagksqls17.github.io/project/2024/08/11/methylation_cancer2.html)
