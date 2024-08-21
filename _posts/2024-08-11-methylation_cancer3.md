@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[후성유전학] 3. DMR 분석 - DDS R package 원리 (8.21. updated)"
+title: "[후성유전학] 3. DDS R package 원리 1 (8.21. updated)"
 categories: project
 tags: test
 last_modified_at: 2024-08-11T18:00:00~23:00
@@ -89,7 +89,10 @@ Biological variation을 고려해서, p*id*는 beta distrubution을 따른다고
 
 따라서 Y*id*는 beta-binomial distribution을 따른다.   
 
-**즉 Y*id* ~ beta-bin (m*id*, π*id*, ψ*i*)**  
+**즉 Y*id* ~ beta-bin (m*id*, π*id*, ψ*i* )**  
 
 ---  
 
+[이전글: 후성유전학 2. CpG island](https://rlagksqls17.github.io/project/2024/08/11/methylation_cancer2.html)
+
+---
