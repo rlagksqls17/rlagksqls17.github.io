@@ -33,8 +33,8 @@ DSS R package를 이용하여 DMR을 식별할 수 있다.
 
 먼저, 어떤 input data가 D 개의 샘플들 내 N 개의 CpG 사이트에 대한 정보를 가진다고 가정해보자. 
 
-![Imgur](https://imgur.com/Dqp9Abv.jpg)
+Dataset *d* (*d* = 1, 2, 3, ..., *D*) 내의 모든 CpG site i (i = 1, 2, 3, ..., *N*)에 대해서, Y*id* 는 메틸화된 read의 수를, m*id*는 그 CpG site를 가지는 전체 read의 수를 말한다. *아래 그림을 살펴보자*  
 
-
+![Imgur](https://imgur.com/10bIGrs.jpg)
 
 ---  
