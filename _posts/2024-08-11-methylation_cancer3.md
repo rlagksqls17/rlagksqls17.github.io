@@ -1,11 +1,20 @@
 ---
 layout: post
-title: "[후성유전학] 3. DMR 분석 - DDS R package 원리"
+title: "[후성유전학] 3. DMR 분석 - DDS R package 원리 (8.21. updated)"
 categories: project
 tags: test
 last_modified_at: 2024-08-11T18:00:00~23:00
 ---  
 
+
+## 요약  
+
+![Imgur](https://imgur.com/ovyL9LK.jpg)  
+
+위 논문을 읽고 번역 및 개인적으로 해석하여 DDS R package가 어떤식으로 돌아가는지 정리해두었다.  
+
+해당 프로그램 알고리즘 내 여러 통계적인 지식들을 본인이 이해한대로 정리해두었으니, 무조건 맞지 않을 수 있다. 읽는데 유의했으면 좋겠다.  
+ 
 
 ## DMR이란?  
 DMR (Differentially methylated region)이란, 예를 들어 A그룹 (약 복용)과 B그룹 (대조군)이 있을 때, 그 그룹 간의 메틸화 (methylation) 패턴이 다른 region들을 의미한다. 일반적으로 sequence data 내 CpG 사이트 (이전 글에서 설명)내 메틸화 존재 여부를 특정 소프트웨어 (예를 들어 Bismark, 다른 글에서 설명 예정)를 사용하여 확인하는데, 식별된 CpG 사이트들 중 몇몇 CpG 사이트들이 포함된 특정 region에서 만약 메틸화 패턴이 A그룹과 B그룹간에 다르다면, 그것을 DMR이라 칭한다.   
