@@ -37,4 +37,22 @@ Dataset *d* (*d* = 1, 2, 3, ..., *D*) 내의 모든 CpG site i (i = 1, 2, 3, ...
 
 ![Imgur](https://imgur.com/10bIGrs.jpg)
 
+sampling과 biological variation을 고려했을 때, Y*id*는 beta-binomial distribution을 따른다고 가정한다.  
+
+---
+
+여기서 잠깐, 본인이 통계에 대해서 정말 아무것도 모르지만, 그래도 beta binomial distribution에 대해 공부해봤다. 
+
+**여기서 저자는 왜 Yid가 beta-binomial distribution을 따른다고 가정했을까?**
+
+먼저 이항분포 (binomial distribution)에 대해 알아야 한다. 이항분포는 말 그대로 실패, 혹은 성공과 같이 결과가 두 가지로 한정되는 실험을 특정 횟수만큼 반복했을 때의 성공 횟수를 분포로 나타낸 것이다.  
+
+아래 그림을 보자.  
+
+![Imgur](https://imgur.com/FmZmNZT.jpg)
+
+위 그림은 이항 분포의 예시이다. x축은 성공의 횟수, y축은 특정 횟수만큼 성공할 확률을 의미한다. figure legend의 각 색깔 점은 실험 디자인을 의미한다. 예를 들어, 빨간 색 점으로 표기된 분포는, 성공확률이 0.5로 알려져있는 시행을 40번 했을 때, 20번 성공할 확률, 30번 성공할 확률 등을 분포로 나타낸 것이다.  
+
+
+
 ---  
