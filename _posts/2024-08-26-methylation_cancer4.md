@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[후성유전학] 4. DDS R package 원리 2"
+title: "크로스핏 중에 배운 것"
 categories: project
 tags: test
 last_modified_at: 2024-08-26T18:00:00~23:00
