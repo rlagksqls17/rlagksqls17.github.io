@@ -63,3 +63,7 @@ arsine(2π*id* - 1) = x_d * β_i
 **H_0j:C^Tβ_i = 0 => 실험적인 요인들의 선형 결합 C^T (다수의 X_d 값들로부터 계산됨)이 CpG 메틸화 수준에 영향을 주지 않는다.**  
 
 이걸 이용해서, 모든 실험적 요인 및 공변량 (experimental factor/covariate)에 대한 DML (Differentially Methylated Loci, 메틸화된 CpG site를 의미) 여부를 탐지할 수 있다고 한다.  
+
+---  
+
+너무 어렵다 ㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠ
