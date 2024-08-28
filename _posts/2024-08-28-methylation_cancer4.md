@@ -15,7 +15,7 @@ last_modified_at: 2024-08-28T18:00:00~23:00
 
 해당 프로그램 알고리즘 내 여러 통계적인 지식들을 본인이 이해한대로 정리해두었으니, 무조건 맞지 않을 수 있다. 읽는데 유의했으면 좋겠다.  
  
-[지난 글](https://rlagksqls17.github.io/project/2024/08/11/methylation_cancer3.html)에서는 DMR이란 무엇이고, DMR을 식별하는데 유용한 DDS R package가 어떤 원리를 이용하는지에 대해, 베타이항분포의 개략적인 개념을 통해 설명하였다. 
+[지난 글](https://rlagksqls17.github.io/project/2024/08/11/methylation_cancer3-copy.html)에서는 DMR이란 무엇이고, DMR을 식별하는데 유용한 DDS R package가 어떤 원리를 이용하는지에 대해, 베타이항분포의 개략적인 개념을 통해 설명하였다. 
 
 이번 글에서는 결과적으로 이러한 베타이항분포 모델로부터, 어떻게 가설 검정을 위한 통계량 계산식을 유도할 수 있는지 작성해보도록 하겠다.  
 
@@ -29,7 +29,7 @@ last_modified_at: 2024-08-28T18:00:00~23:00
 
 지난 글에서, 우리는 Dataset d (d = 1, 2, 3, ..., D) 내의 모든 CpG site i (i = 1, 2, 3, ..., N)에 대해서, Y*id*를 메틸화된 read의 수, m*id*는 그 CpG site를 가지는 전체 read의 수를 말한다는 것을 알았다.   
 
-또한 p*id*를 sample d 내 특정 CpG site i의 메틸화 수준이라고 부르기로 했다 ([지난 글](https://rlagksqls17.github.io/project/2024/08/11/methylation_cancer3.html)을 꼭 살펴보자).  
+또한 p*id*를 sample d 내 특정 CpG site i의 메틸화 수준이라고 부르기로 했다 ([지난 글](https://rlagksqls17.github.io/project/2024/08/11/methylation_cancer3-copy.html)을 꼭 살펴보자).  
 
 이후, 저자는 Y*id*가 이항 분포 (특정 CpG site에서 메틸화가 되느냐 안되느냐 둘 중 한가지의 시행에 다른 확률의 분포)를 따른다고 가정했지만, 그 확률을 단순하게 추정할 수 없고 여러 생물학적 맥락에서 고려해야 하기 때문에, **사전 확률 분포, 즉 베타분포를 그림으로써 메틸화가 될 확률을 더 정확하게 추정하여야 한다고 주장한다.** 따라서 Y*id*는 베타이항분포 (beta-binomial distribution)를 따른다고 가정한다.    
 

@@ -63,4 +63,4 @@ observed CpG 공식: ***(CpG 수)***
 
 [이전글: 후성유전학 1. 개요](https://rlagksqls17.github.io/project/2024/08/09/methylation_cancer1.html)  
 
-[다음글: 후성유전학 3. DDS R package 원리 1](https://rlagksqls17.github.io/project/2024/08/11/methylation_cancer3.html)
+[다음글: 후성유전학 3. DDS R package 원리 1](https://rlagksqls17.github.io/project/2024/08/11/methylation_cancer3-copy.html)
