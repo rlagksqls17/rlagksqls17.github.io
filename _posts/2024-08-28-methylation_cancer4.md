@@ -3,7 +3,7 @@ layout: post
 title: "[후성유전학] 4. DDS R package 원리 2"
 categories: project
 tags: test
-last_modified_at: 2024-08-11T18:00:00~23:00
+last_modified_at: 2024-08-28T18:00:00~23:00
 ---  
 
 
