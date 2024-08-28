@@ -51,7 +51,8 @@ last_modified_at: 2024-08-28T18:00:00~23:00
 
 어쨋거나 결과적으로 식은 다음과 같다.  
 
-Y*id* ~ beta-bin (m*id*, π*id*, ψi)
+Y*id* ~ beta-bin (m*id*, π*id*, ψi),  
+
 arsine(2π*id* - 1) = x_d * β_i  
 
 ---  
