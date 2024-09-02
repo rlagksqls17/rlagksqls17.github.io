@@ -97,4 +97,6 @@ Biological variation을 고려해서, p*id*는 beta distrubution을 따른다고
 
 [이전글: 후성유전학 2. CpG island](https://rlagksqls17.github.io/project/2024/08/11/methylation_cancer2.html)
 
+[다음글: DDS R package 원리 2](https://rlagksqls17.github.io/project/2024/08/28/methylation_cancer4-copy.html)
+
 ---
