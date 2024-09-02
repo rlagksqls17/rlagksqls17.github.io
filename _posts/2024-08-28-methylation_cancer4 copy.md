@@ -68,3 +68,9 @@ arsine(2π*id* - 1) = x_d * β_i
 ---  
 
 너무 어렵다 ㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠ
+
+---  
+
+[이전글: DDS R package 원리 1](https://rlagksqls17.github.io/project/2024/08/11/methylation_cancer3-copy.html)  
+
+[다음글: Chip Seq data와 후성유전학과의 관계](https://rlagksqls17.github.io/project/2024/09/02/methylation_cancer5.html)
