@@ -54,3 +54,4 @@ DNA hypermethylation을 해주는 기능이 있다고 알려져 있다 [(참조�
 
 [이전글: DDS R package 원리 2](https://rlagksqls17.github.io/project/2024/08/28/methylation_cancer4-copy.html)  
 
+[다음글: GSEA - Gene Set Enrichment Analysis](https://rlagksqls17.github.io/project/2024/09/05/GSEA.html)  
