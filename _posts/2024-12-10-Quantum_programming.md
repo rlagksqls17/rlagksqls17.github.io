@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Quantum computing] 양자컴퓨팅 원리"
+title: "[Quantum computing] 양자컴퓨팅 원리 기록"
 categories: project
 tags: test
 last_modified_at: 2024-11-30T18:00:00~23:00
@@ -25,10 +25,14 @@ last_modified_at: 2024-11-30T18:00:00~23:00
 
 ---  
 
-다음 논문을 읽고 천천히 상세하게 해석을 써내려가보도록 하려고 한다.  
+우선, "양자"가 뭔지에 대해서 생각해보기로 했다.  
 
-Pal, S., Bhattacharya, M., Lee, SS. et al. Quantum Computing in the Next-Generation Computational Biology Landscape: From Protein Folding to Molecular Dynamics. Mol Biotechnol 66, 163–178 (2024). https://doi.org/10.1007/s12033-023-00765-4  
+구글에 양자를 검색하면 다음과 같이 정보가 나온다.   
 
----  
+양자 (quantum) : 더 이상 나눌 수 없는 에너지의 최소량의 단위   
+
+더 이상 나눌 수 없는 에너지가 무슨 말일까?  
+
+문장은 뭘 말하는지는 알겠는데 "더 이상 나눌 수 없는 에너지"가 정확히 뭘 말하는건지를 이해하지 못했다.  
 
 
