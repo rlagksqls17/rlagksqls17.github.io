@@ -71,3 +71,11 @@ minima:
 category_archive:
   type: liquid
   path: /project/
+
+
+# Conversion
+markdown: kramdown  
+highlighter: rouge  
+lsi: false  
+except_separator: "\n\n"  
+incremental: false
