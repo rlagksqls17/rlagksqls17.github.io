@@ -49,10 +49,8 @@ def comparison_beta(df1, df2):
 	# 주어진 값을 숫자형으로 변형
     df1 = df1.apply(pd.to_numeric) 
 
-	# 종속변수
+	# 종속변수 및 독립변수
     X = sm.add_constant(df1[['age', 'sex', 'cov1', 'variable']])
-    
-	# 독립변수
 	Y = df1['predict']
 
 	# df1 에서의 linear regression model  
