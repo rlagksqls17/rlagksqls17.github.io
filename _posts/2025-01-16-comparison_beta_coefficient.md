@@ -49,7 +49,7 @@ def comparison_beta(df1, df2):
 	# 주어진 값을 숫자형으로 변형
     df1 = df1.apply(pd.to_numeric) 
 
-	# 종속변수 및 독립변수
+	# 종속변수 및 독립변수, 글 쓸 때 indentation 설정이 제대로 안된다..
     X = sm.add_constant(df1[['age', 'sex', 'cov1', 'variable']])
 	Y = df1['predict']
 
