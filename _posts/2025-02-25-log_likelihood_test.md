@@ -27,6 +27,7 @@ last_modified_at: 2025-02-25T18:00:00~23:00
 
 
 ## 개요  
+
 [저번 글]("https://rlagksqls17.github.io/project/2025/01/16/comparison_beta_coefficient.html")에서는 특정 독립변수가 종속변수에 미치는 영향이 서로 다른 조건에서의 두 linear regression에서 어떻게 다른지를 test하는 방법과 코드를 포스트했다. 이번 글에서는 **독립변수 set이 서로 다른 두 linear regression 중 어떤 regression formula가 더 종속변수를 잘 설명할 수 있는가를 test**하는, log-likelihood test에 대해 포스트하려고한다.  
 
 모든 통계 방정식을 여기에 다 적지는 않았고, 대강 원리가 어떻게 돌아가는지만 기록해두려고 했다.  
@@ -42,8 +43,11 @@ lineare regression은, 그림에서처럼 일반적으로 한 변수와 다른 �
 
 이때 그 회귀선의 기울기가 크면 클수록 genotype이 expression에 미치는 영향이 크다고 할 수 있다. 이 크기의 정도를 beta coefficient라 한다. linear regression은 이렇게, 주어진 독립변수를 통해 종속변수를 예측하는 용도 뿐만 아니라, 각 종속변수별 독립변수와의 관계 측정의 목적으로도 쓰일 수 있다.  
 
+
 ## 최소제곱법과 log-likelihood test  
 
-![Imgur](https://imgur.com/kLu9cZg.jpg)  
+![Imgur](https://imgur.com/PzBbM6C.jpg)
+
+한편, linear regression에서 많이 쓰이는 알고리즘은 다음과 같다. 즉 모델을 만드는데 쓰인 expression 실제값 (종속변수)과, 완성된 모델에 genotype data (독립변수)를 넣어줬을 때의 회귀선 예측값 차이를 잔차라고 하는데, 이 잔차들의 제곱합을 최소화하는 방법인 **최소제곱법 (method of least squares)** 을 이용해 회귀선을 그림으로써 주어진 모델이 독립변수와 종속변수 간의 관계를 잘 정립할 수 있게끔 해준다. 지금 위의 그림이 어떻게 보면 잔차가 최소화되도록 회귀선을 그린 것이라고 볼 수 있다.  
 
 
