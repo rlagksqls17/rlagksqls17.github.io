@@ -52,5 +52,10 @@ lineare regression은, 그림에서처럼 일반적으로 한 변수와 다른 �
 
 ![Imgur](https://imgur.com/SiS5L58.jpg)  
 
+사실, gene expression에 관계가 있는 변수는 genotype 뿐만 아니라 TF-expression, TF-SNP interaction 등이 gene expression과 관계가 있을 수 있다.  
 
+그렇다는 가정하에서, 만약 genotype, TF expression,  gene expression의 regression을 의미하는 Formula1과, TF-SNP의 상호작용, gene expression의 regression을 의미하는 Formula2를 서로 비교했을 때, 그 잔차들의 제곱합이 Formula2에서 더 적어진다면, 즉 독립변수와 종속변수의 관계를 의미하는 회귀선에 주어진 점들이 최대한 가깝게 찍혔다면, 이는 genotype이라는 변수보다 TF-SNP interaction의 변수가 expression과의 관계를 더 잘 설명한다고 해석할 수가 있게 된다.  
 
+즉 특정 변수를 다른 변수로 대체하거나 추가했을 때 전체 모델의 잔차제곱합이 적어지냐, 많아지냐를 확인함으로써, 어떤 변수가 expression과의 관계를 더 잘 설명하는지를 알 수 있는 것이다. linear regression에서 모델의 설명력을 의미하는 log likelihood를 계산하는 방정식 자체가 잔차제곱합 value와 밀접하게 관련되어 있고,   
+
+따라서 각기 다른 변수 set을 가지는 두 linear regression 식에서의 log likelhood를 비교함으로써, 어떤 변수 set이 expression 변화에 중요한 기여를 하는지 평가할 수 있다 (카이제곱검정 등). 여기까지 log likelihood ratio test의 기초적인 개념을 간략하게 정리해보았다. 
