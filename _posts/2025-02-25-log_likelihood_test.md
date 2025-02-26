@@ -50,6 +50,7 @@ lineare regression은, 그림에서처럼 일반적으로 한 변수와 다른 �
 
 한편, linear regression에서 많이 쓰이는 알고리즘은 다음과 같다. 즉 모델을 만드는데 쓰인 expression 실제값 (종속변수)과, 완성된 모델에 genotype data (독립변수)를 넣어줬을 때의 회귀선 예측값 차이를 잔차라고 하는데, 이 잔차들의 제곱합을 최소화하는 방법인 **최소제곱법 (method of least squares)** 을 이용해 회귀선을 그림으로써 주어진 모델이 독립변수와 종속변수 간의 관계를 잘 정립할 수 있게끔 해준다. 지금 위의 그림이 어떻게 보면 잔차가 최소화되도록 회귀선을 그린 것이라고 볼 수 있다.  
 
-![Imgur](https://imgur.com/SkBKn00.jpg)  
+![Imgur](https://imgur.com/SiS5L58.jpg)  
+
 
 
