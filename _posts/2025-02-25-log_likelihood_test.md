@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[통계] log likelihood test"
+title: "[통계] eQTL 분석과 log likelihood test"
 categories: project
 tags: test
 last_modified_at: 2025-02-25T18:00:00~23:00
@@ -36,7 +36,7 @@ last_modified_at: 2025-02-25T18:00:00~23:00
 
 ## linear regression이란?    
 
-![Imgur](https://imgur.com/y1mZCXY.jpg)
+![Imgur](https://imgur.com/z3rfhlY.jpg)
 
 lineare regression은, 그림에서처럼 일반적으로 한 변수와 다른 변수의 value 사이의 어떤 관계, 예를 들면 X (독립변수, 여기서는 SNP)가 증가하면 Y (종속변수, 여기서는 expression)가 증가, 혹은 반대로 X가 증가하면 Y는 감소하는 식의 관계에 대한 정량적 모델을 제공한다. 일반적으로, genotype에따라 expression이 변화하는가에 대한 linear regression 식인, eQTL (expression quantitative loci) lineare regression 식을 디자인 할때는, 독립변수인 genotype matrix와 종속변수인 gene expression matrix를 input으로 넣어줘야 그 변수 간의 관계에 대한 모델링이 가능하다. 즉, 위 그림과 같이  input으로 넣어진 데이터를 기반으로, 특정 독립변수에 대해 종속변수의 관계에 대한 정량적 척도인 회귀선이 예측된다.  
 
